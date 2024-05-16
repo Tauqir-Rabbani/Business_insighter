@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Business Insider</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light">
+  <header id="back-top">
+    <nav class="navbar navbar-expand-lg navbar-white bg-light">
+      <div class="container-fluid container-lg">
+        <button class="d-block border-0 bg-light" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="pe-4 m-auto d-lg-block d-none">
+          <a class="" href="/">
+            <svg class="" viewBox="0 0 1365 120" xmlns="http://www.w3.org/2000/svg" height="80" width="400">
+              <title>Business Insider logo</title>
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M0 2.46h49.1c27.31 0 41.59 14.12 41.59 31.46 0 11.97-6.75 20.1-16.11 24.4v.31c11.97 4.3 18.72 13.81 18.72 25.93 0 17.34-13.35 32.53-42.2 32.53H0V2.46Zm47.57 45.42c8.13 0 11.82-4.14 11.82-8.75s-3.68-8.9-11.82-8.9H33.15v17.65h14.42Zm.46 41.43c8.59 0 12.74-4.14 12.74-9.51s-4.3-9.51-12.58-9.51H33.15v19.03h14.88Zm52.32-18.87V2.46h33.45v67.67c0 12.74 6.29 19.49 17.03 19.49s17.49-6.75 17.49-19.64V2.46h33.61v67.98c0 28.85-19.33 49.57-51.1 49.57s-50.49-20.72-50.49-49.57ZM287.1 7.98v29.46c-7.21-5.06-19.49-8.59-29.46-8.59-9.05 0-13.66 2.92-13.66 6.75s5.06 5.83 14.12 9.05c15.35 5.37 36.21 12.58 36.21 36.98 0 21.79-16.42 37.9-45.27 37.9-14.88 0-28.54-4.3-36.98-9.97v-31c8.29 6.75 20.87 12.12 32.99 12.12 10.28 0 15.04-3.84 15.04-8.13 0-5.52-7.83-7.98-17.19-11.36-12.28-4.45-31.76-12.43-31.76-34.68 0-20.1 15.81-36.52 44.04-36.52 12.43 0 23.63 3.22 31.92 7.98Zm15.8-5.52h33.45v114.63H302.9V2.46Zm152.38 114.63h-31.92l-41.28-61.53h-.15v61.53h-31.76V2.46h31.92l41.28 60.46h.15V2.46h31.76v114.63ZM469.09 2.46h79.18v29.77h-45.73v13.81h41.12v27.01h-41.12v14.27h45.73v29.77h-79.18V2.46Zm163.12 5.52v29.46c-7.21-5.06-19.49-8.59-29.46-8.59-9.05 0-13.66 2.92-13.66 6.75s5.06 5.83 14.12 9.05c15.35 5.37 36.21 12.58 36.21 36.98 0 21.79-16.42 37.9-45.27 37.9-14.88 0-28.54-4.3-36.98-9.97v-31c8.29 6.75 20.87 12.12 32.99 12.12 10.28 0 15.04-3.84 15.04-8.13 0-5.52-7.83-7.98-17.19-11.36-12.28-4.45-31.76-12.43-31.76-34.68 0-20.1 15.81-36.52 44.04-36.52 12.43 0 23.63 3.22 31.92 7.98Zm88.54 0v29.46c-7.21-5.06-19.49-8.59-29.46-8.59-9.05 0-13.66 2.92-13.66 6.75s5.06 5.83 14.12 9.05c15.35 5.37 36.21 12.58 36.21 36.98 0 21.79-16.42 37.9-45.27 37.9-14.88 0-28.54-4.3-36.98-9.97v-31c8.29 6.75 20.87 12.12 32.99 12.12 10.28 0 15.04-3.84 15.04-8.13 0-5.52-7.83-7.98-17.19-11.36-12.28-4.45-31.76-12.43-31.76-34.68 0-20.1 15.81-36.52 44.04-36.52 12.43 0 23.63 3.22 31.92 7.98Zm45.97 109.33h33.45V2.69h-33.45v114.63ZM919.08 2.69h-31.76v60.46h-.15L845.89 2.69h-31.92v114.63h31.76V55.79h.15l41.28 61.53h31.92V2.69ZM972.92.23c-28.24 0-44.04 16.42-44.04 36.52 0 22.25 19.49 30.23 31.76 34.68 9.36 3.38 17.19 5.83 17.19 11.36 0 4.3-4.76 8.13-15.04 8.13-12.12 0-24.71-5.37-32.99-12.12v31c8.44 5.68 22.1 9.97 36.98 9.97 28.85 0 45.27-16.11 45.27-37.9 0-24.4-20.87-31.61-36.21-36.98-9.05-3.22-14.12-5.06-14.12-9.05s4.6-6.75 13.66-6.75c9.97 0 22.25 3.53 29.46 8.59V8.21C996.55 3.45 985.35.23 972.92.23Zm46.94 117.08h33.45V2.69h-33.45v114.63Zm80.71-30.23h6.45c17.34 0 28.54-9.82 28.54-27.01s-11.2-27.16-28.54-27.16h-6.45v54.17Zm68.75-27.01c0 34.53-26.09 57.24-63.53 57.24h-38.67V2.69h38.67c37.44 0 63.53 22.86 63.53 57.39Zm9.07 57.24h79.18V87.54h-45.73V73.27h41.12V46.26h-41.12V32.45h45.73V2.69h-79.18v114.63Zm131.83-60.46c8.44 0 15.04-3.99 15.04-11.97s-6.6-11.97-15.19-11.97h-7.06v23.94h7.21Zm54.78 60.46h-39.44l-21.79-35.45h-.77v35.45h-33.45V2.69h40.82c28.7 0 48.64 12.74 48.64 39.9 0 10.74-4.76 26.39-23.79 34.37l29.77 40.36Z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="pe-4 m-auto d-block d-lg-none">
+          <a href="https://www.businessinsider.com/" class="pe-2 d-block d-lg-none"
+            data-analytics-product-module="masthead">
+            <svg class="" viewBox="0 0 930 320" xmlns="http://www.w3.org/2000/svg" height="40" width="140">
+              <title>Business Insider logo</title>
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M.4 3.1h62.7c34.9 0 53.1 18 53.1 40.2 0 15.3-8.6 25.7-20.6 31.1v.4c15.3 5.5 23.9 17.6 23.9 33.1 0 22.1-17 41.5-53.9 41.5H.4V3.1zm60.7 58c10.4 0 15.1-5.3 15.1-11.2s-4.7-11.4-15.1-11.4H42.7V61h18.4zm.6 52.9c11 0 16.3-5.3 16.3-12.1s-5.5-12.1-16.1-12.1H42.7V114h19zm66.8-24.1V3.1h42.7v86.4c0 16.3 8 24.9 21.7 24.9s22.3-8.6 22.3-25.1V3.1h42.9v86.8c0 36.8-24.7 63.3-65.2 63.3s-64.4-26.5-64.4-63.3zm238.4-79.7v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5C294.8 85.2 270 75 270 46.6 269.9 21 290.1 0 326.1 0c15.9 0 30.2 4.1 40.8 10.2zM387 3.1h42.7v146.3H387V3.1zm194.5 146.4h-40.7L488.1 71h-.2v78.5h-40.5V3.1h40.7l52.7 77.2h.2V3.1h40.5v146.4zM599.2 3.1h101.1v38h-58.4v17.6h52.5v34.5h-52.5v18.2h58.4v38H599.2V3.1zm208.2 7.1v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C710.4 21 730.6 0 766.6 0c15.9 0 30.2 4.1 40.8 10.2zm113 0v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C823.4 21 843.6 0 879.6 0c15.9 0 30.2 4.1 40.8 10.2zM94.1 316.9h42.7V170.6H94.1v146.3zm194.5-146.3H248v77.2h-.2l-52.7-77.2h-40.7v146.3H195v-78.5h.2l52.7 78.5h40.7V170.6zm68.8-3.2c-36 0-56.2 21-56.2 46.6 0 28.4 24.9 38.6 40.5 44.3 12 4.3 21.9 7.4 21.9 14.5 0 5.5-6.1 10.4-19.2 10.4-15.5 0-31.5-6.9-42.1-15.5v39.6c10.8 7.2 28.2 12.7 47.2 12.7 36.8 0 57.8-20.6 57.8-48.4 0-31.1-26.6-40.4-46.2-47.2-11.6-4.1-18-6.5-18-11.6s5.9-8.6 17.4-8.6c12.7 0 28.4 4.5 37.6 11v-37.6c-10.6-6.1-24.9-10.2-40.7-10.2zm59.9 149.5H460V170.6h-42.7v146.3zm103-38.6h8.2c22.1 0 36.4-12.5 36.4-34.5s-14.3-34.7-36.4-34.7h-8.2v69.2zm87.8-34.5c0 44.1-33.3 73.1-81.1 73.1h-49.4V170.6H527c47.8 0 81.1 29.2 81.1 73.2zm11.5 73.1h101.1v-38h-58.4v-18.2h52.5v-34.5h-52.5v-17.6h58.4v-38H619.6v146.3zm168.3-77.2c10.8 0 19.2-5.1 19.2-15.3s-8.4-15.3-19.4-15.3h-9v30.6h9.2zm69.9 77.2h-50.3l-27.8-45.2h-1v45.2H736V170.6h52.1c36.6 0 62.1 16.3 62.1 50.9 0 13.7-6.1 33.7-30.4 43.9l38 51.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button> -->
+
+    <div class="offcanvas offcanvas-start p-4 pt-5" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="">
+          <a href="https://www.businessinsider.com/" class="" data-analytics-product-module="masthead">
+            <svg class="" viewBox="0 0 930 320" xmlns="http://www.w3.org/2000/svg" height="40" width="140">
+              <title>Business Insider logo</title>
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M.4 3.1h62.7c34.9 0 53.1 18 53.1 40.2 0 15.3-8.6 25.7-20.6 31.1v.4c15.3 5.5 23.9 17.6 23.9 33.1 0 22.1-17 41.5-53.9 41.5H.4V3.1zm60.7 58c10.4 0 15.1-5.3 15.1-11.2s-4.7-11.4-15.1-11.4H42.7V61h18.4zm.6 52.9c11 0 16.3-5.3 16.3-12.1s-5.5-12.1-16.1-12.1H42.7V114h19zm66.8-24.1V3.1h42.7v86.4c0 16.3 8 24.9 21.7 24.9s22.3-8.6 22.3-25.1V3.1h42.9v86.8c0 36.8-24.7 63.3-65.2 63.3s-64.4-26.5-64.4-63.3zm238.4-79.7v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5C294.8 85.2 270 75 270 46.6 269.9 21 290.1 0 326.1 0c15.9 0 30.2 4.1 40.8 10.2zM387 3.1h42.7v146.3H387V3.1zm194.5 146.4h-40.7L488.1 71h-.2v78.5h-40.5V3.1h40.7l52.7 77.2h.2V3.1h40.5v146.4zM599.2 3.1h101.1v38h-58.4v17.6h52.5v34.5h-52.5v18.2h58.4v38H599.2V3.1zm208.2 7.1v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C710.4 21 730.6 0 766.6 0c15.9 0 30.2 4.1 40.8 10.2zm113 0v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C823.4 21 843.6 0 879.6 0c15.9 0 30.2 4.1 40.8 10.2zM94.1 316.9h42.7V170.6H94.1v146.3zm194.5-146.3H248v77.2h-.2l-52.7-77.2h-40.7v146.3H195v-78.5h.2l52.7 78.5h40.7V170.6zm68.8-3.2c-36 0-56.2 21-56.2 46.6 0 28.4 24.9 38.6 40.5 44.3 12 4.3 21.9 7.4 21.9 14.5 0 5.5-6.1 10.4-19.2 10.4-15.5 0-31.5-6.9-42.1-15.5v39.6c10.8 7.2 28.2 12.7 47.2 12.7 36.8 0 57.8-20.6 57.8-48.4 0-31.1-26.6-40.4-46.2-47.2-11.6-4.1-18-6.5-18-11.6s5.9-8.6 17.4-8.6c12.7 0 28.4 4.5 37.6 11v-37.6c-10.6-6.1-24.9-10.2-40.7-10.2zm59.9 149.5H460V170.6h-42.7v146.3zm103-38.6h8.2c22.1 0 36.4-12.5 36.4-34.5s-14.3-34.7-36.4-34.7h-8.2v69.2zm87.8-34.5c0 44.1-33.3 73.1-81.1 73.1h-49.4V170.6H527c47.8 0 81.1 29.2 81.1 73.2zm11.5 73.1h101.1v-38h-58.4v-18.2h52.5v-34.5h-52.5v-17.6h58.4v-38H619.6v146.3zm168.3-77.2c10.8 0 19.2-5.1 19.2-15.3s-8.4-15.3-19.4-15.3h-9v30.6h9.2zm69.9 77.2h-50.3l-27.8-45.2h-1v45.2H736V170.6h52.1c36.6 0 62.1 16.3 62.1 50.9 0 13.7-6.1 33.7-30.4 43.9l38 51.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body noscroll">
+        <ul class="list-unstyled p-5">
+          <li class="fs-4 fw-semibold mb-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Item</li>
+          <li class="fs-4 fw-semibold my-4">Item</li>
+          <li class="fs-4 fw-semibold my-4">Item</li>
+          <li class="fs-4 fw-semibold my-4">
+            <div class="accordion border-0 bg-transparent" id="accordionExample">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header border-0">
+                  <button class="accordion-button fs-4 fw-semibold p-0 bg-transparent border-0 outline-0 collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Links
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled">
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 
+
+
+
+
+
+        <div class="container">
+            <ul class="list-unstyled mb-0 d-flex flex-row">
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+                <li class="dropdown-toggle  mx-3 mx-lg-4 fw-semibold fs-5" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                    <div class="dropdown-menu dropdown-menu-start">
+                        <div class="d-flex">
+                            <ul class="list-unstyled mx-4">
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                            </ul>
+                            <ul class="list-unstyled mx-4">
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                            </ul>
+                            <ul class="list-unstyled mx-4">
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+            </ul>
+        </div> -->
+    <hr class="my-2" />
+  </header>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center my-3 text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+    </svg>
+    <p class="small mb-0 mx-2">
+      When you make a purchase, Business Insider earns a commission.
+    </p>
+  </div>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-xl-8">
+            <div class="row w-100 shadow rounded m-auto">
+              <div class="d-xl-none col-12 text-center align-items-center px-0 my-1 bg-white ">
+                <div class=" px-3">
+                  <div class="right-pane-img text-center">
+                    <img width="100px"
+                      src="https://coupons.businessinsider.com/images/fit-in/240x120/images/l/Lowes_Logo.png" alt="" />
+                  </div>
+                  <div class="text-center text-xl-start">
+                    <h4 class="fw-bold mb-0">Lowe's promocodes for May</h4>
+                    <p class="mb-0 small">Save with our 31 free Lowe's coupons</p>
+                  </div>
+                </div>
+                <ul
+                  class="d-flex justify-content-sm-center flex-row text-center overflow-x-scroll py-2 nav-pills w-100 ps-0 m-auto"
+                  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <li class=" px-2 mx-1 text-nowrap small rounded bg-cst-btn active border-0 py-1 border shadow"
+                    id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab"
+                    aria-controls="v-pills-all" aria-selected="true">
+                    All
+                  </li>
+                  <li class=" px-2 mx-1 small rounded text-nowrap bg-cst-btn border-0 py-1 border shadow"
+                    id="v-pills-coupons-tab" data-bs-toggle="pill" data-bs-target="#v-pills-coupons" type="button"
+                    role="tab" aria-controls="v-pills-coupons" aria-selected="false">
+                    Online Coupons
+                  </li>
+                  <li class=" px-2 mx-1 text-nowrap small rounded bg-cst-btn border-0 py-1 border shadow"
+                    id="v-pills-deals-tab" data-bs-toggle="pill" data-bs-target="#v-pills-deals" type="button"
+                    role="tab" aria-controls="v-pills-deals" aria-selected="false">
+                    Deals
+                  </li>
+                  <li class=" px-2 mx-1 text-nowrap small rounded bg-cst-btn border-0 py-1 border shadow"
+                    id="v-pills-verified-tab" data-bs-toggle="pill" data-bs-target="#v-pills-verified" type="button"
+                    role="tab" aria-controls="v-pills-verified" aria-selected="false">
+                    Verified
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- TABSS -->
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-between align-items-center">
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <div class="bg-secondary d-flex align-items-center justify-content-between p-1">
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                              <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#ffffff"
+                                stroke="none">
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z" />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z" />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"
+                                  width="1rem"
+                                  height="1rem"
+                                >
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li> -->
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                  viewBox="0 0 384 512">
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li>
+                            <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li>
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-coupons" role="tabpanel" aria-labelledby="v-pills-coupons-tab">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-between align-items-center">
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <div class="bg-secondary d-flex align-items-center justify-content-between p-1">
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                              <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#ffffff"
+                                stroke="none">
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z" />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z" />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"
+                                  width="1rem"
+                                  height="1rem"
+                                >
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li> -->
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                  viewBox="0 0 384 512">
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li>
+                            <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li>
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-deals" role="tabpanel" aria-labelledby="v-pills-deals-tab">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-between align-items-center">
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <div class="bg-secondary d-flex align-items-center justify-content-between p-1">
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                              <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#ffffff"
+                                stroke="none">
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z" />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z" />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"
+                                  width="1rem"
+                                  height="1rem"
+                                >
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li> -->
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                  viewBox="0 0 384 512">
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li>
+                            <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li>
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-verified" role="tabpanel" aria-labelledby="v-pills-verified-tab">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-between align-items-center">
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <div class="bg-secondary d-flex align-items-center justify-content-between p-1">
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                              <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#ffffff"
+                                stroke="none">
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z" />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z" />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"
+                                  width="1rem"
+                                  height="1rem"
+                                >
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li> -->
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                  viewBox="0 0 384 512">
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li>
+                            <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li>
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col custom_card-01 px-3 mt-3">
+                    <a href="#"
+                      class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                      <div class="col-3 p-0">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                            <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                              $40 Off
+                            </p>
+                          </div>
+                          <!-- <div
+                            class="bg-secondary d-flex align-items-center justify-content-between p-1"
+                          >
+                            <p class="mb-0 text-white small ps-2">Verified</p>
+                            <svg
+                              version="1.0"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.1rem"
+                              height="1.1rem"
+                              viewBox="0 0 96.000000 96.000000"
+                              preserveAspectRatio="xMidYMid meet"
+                            >
+                              <g
+                                transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                fill="#ffffff"
+                                stroke="none"
+                              >
+                                <path
+                                  d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z"
+                                />
+                                <path
+                                  d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z"
+                                />
+                              </g>
+                            </svg>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                          <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                            <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                              </path>
+                            </svg>
+                          </div>
+                          <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                  height="1rem">
+                                  <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Code
+                              </p>
+                            </li>
+                            <!-- <li
+                              class="d-flex align-items-center bg-secondary px-2 gap-1"
+                            >
+                              <div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="1rem"
+                                  height="1rem"
+                                  viewBox="0 0 384 512"
+                                >
+                                  <path
+                                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <p class="mb-0 small text-uppercase text-white">
+                                Deal
+                              </p>
+                            </li> -->
+                            <!-- <li class="bg-secondary-subtle px-2">
+                              <p class="mb-0 small text-uppercase text-dark">
+                                Today's Choice
+                              </p>
+                            </li> -->
+                          </ul>
+                          <p>
+                            Up to $40 Off Walmart Coupon - Valid on Any $50+
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                          <p class="mb-0">Terms</p>
+                          <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row bg-white mb-3 shadow px-4 pt-2 rounded mt-5">
+              <h6 class="fw-bold mt-4 fs-5 text-start">
+                Sign up today for free Lowe's coupons and promo codes
+              </h6>
+              <div class="input-group my-3">
+                <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username"
+                  aria-describedby="basic-addon2" />
+                <span class="input-group-text bg-dark rounded-end text-white" id="basic-addon2">Subscribe</span>
+                <p class="text-start my-4">
+                  Subscribe to Business Insider Coupons' Newsletter (operated
+                  by Global Savings Group) for personalized offers based on
+                  your shopping preferences on our website as described in the
+                  Privacy Policy . You can unsubscribe at any time.
+                </p>
+              </div>
+            </div>
+            <div class="p-4 row shadow bg-white rounded">
+              <div class="col-12 col-md-3 text-center align-content-center">
+                <p class="fs-3 fw-bold">
+                  $500 <br />
+                  Off!
+                </p>
+              </div>
+              <div class="col-12 col-md-9">
+                <h5>Shop smart with this Lowe’s promo code</h5>
+                <p>
+                  There are always great savings at Lowe's. When this Lowe's
+                  promo code was available, customers saved $500 on
+                  appliances, building supplies, hardware, outdoor furniture,
+                  home decor, and more. If this promo code is not available,
+                  check here for other ways to save on everything you need.
+                </p>
+                <button class="btn btn-dark col-12 col-md-4">
+                  Continue To Store
+                </button>
+              </div>
+
+
+            </div>
+
+            <div class="p-4  my-3 d-lg-flex">
+              <div class="bg-white me-lg-2 p-4 rounded shadow">
+                <div class="mb-2 text-center text-lg-start"><i class="bi fs-4 bi-pencil-fill"></i></div>
+                <h5>Save more with subscriptions and Lowe's coupons</h5>
+                <p>
+                  Lowe's offers a subscription service where you can save on
+                  all eligible items. Browse their qualifying products and
+                  set up an automatic delivery time that works best for your
+                  needs. Not only does it allow you to worry less about
+                  staying on top of ordering home essentials, but you'll
+                  also score a 5% off Lowe's coupon on every product you
+                  create a subscription for. You'll also get free shipping
+                  on all your subscriptions. Shop, subscribe, and save at
+                  Lowe's today.
+                </p>
+              </div>
+              <div class="bg-white p-4 mt-2 mt-lg-0 rounded shadow">
+                <div class="mb-2 text-center text-lg-start"><i class="bi fs-4 bi-pencil-fill"></i></div>
+                <h5>Save more with subscriptions and Lowe's coupons</h5>
+                <p>
+                  Lowe's offers a subscription service where you can save on
+                  all eligible items. Browse their qualifying products and
+                  set up an automatic delivery time that works best for your
+                  needs. Not only does it allow you to worry less about
+                  staying on top of ordering home essentials, but you'll
+                  also score a 5% off Lowe's coupon on every product you
+                  create a subscription for. You'll also get free shipping
+                  on all your subscriptions. Shop, subscribe, and save at
+                  Lowe's today.
+                </p>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mb-3" id="accordionFlushExample">
+              <h5 class="fw-bold mb-3">Lowe's FAQs</h5>
+              <div class="accordion-item">
+                <h5 class="accordion-header ">
+                  <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Your Question here
+                  </button>
+                </h5>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae dolores. Unde, ducimus,
+                      consequuntur ipsa, hic dicta ad libero facere at autem cum tempora dolor culpa pariatur provident
+                      laboriosam quia!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header ">
+                  <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Your Question here
+                  </button>
+                </h5>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae dolores. Unde, ducimus,
+                      consequuntur ipsa, hic dicta ad libero facere at autem cum tempora dolor culpa pariatur provident
+                      laboriosam quia!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header ">
+                  <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Your Question here
+                  </button>
+                </h5>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae dolores. Unde, ducimus,
+                      consequuntur ipsa, hic dicta ad libero facere at autem cum tempora dolor culpa pariatur provident
+                      laboriosam quia!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <h5>
+                Coupons from Similar Stores
+              </h5>
+            </div>
+            <div class="row row-cols-1 mb-3 row-cols-lg-2 ">
+              <div class="col mt-3">
+                <div class="mx-3 custom_card-01">
+                  <a href="#"
+                    class="border overflow-hidden shadow row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                      <div class="h-100 d-flex flex-column">
+                        <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                          <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                            alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                      <div class="p-2 position-relative">
+                        <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                          <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0 mb-sm-2">
+                          <li class="d-flex align-items-center gap-1">
+                            <p class="mb-0 small text-uppercase">Deal</p>
+                          </li>
+                          <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                        </ul>
+                        <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                        <p class="mb-0">
+                          Up to $40 Off Walmart Coupon - Valid on Any $50+
+                        </p>
+                      </div>
+                      <div class="px-2 small py-1 d-block d-sm-flex justify-content-between dashed_border">
+                        <p class="mb-0">Terms</p>
+                        <p class="mb-0">Exp. 05/04/2024</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="mx-3 custom_card-01">
+                  <a href="#"
+                    class="border overflow-hidden shadow row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                      <div class="h-100 d-flex flex-column">
+                        <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                          <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                            alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                      <div class="p-2 position-relative">
+                        <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                          <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0 mb-sm-2">
+                          <li class="d-flex align-items-center gap-1">
+                            <p class="mb-0 small text-uppercase">Deal</p>
+                          </li>
+                          <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                        </ul>
+                        <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                        <p class="mb-0">
+                          Up to $40 Off Walmart Coupon - Valid on Any $50+
+                        </p>
+                      </div>
+                      <div class="px-2 small py-1 d-block d-sm-flex justify-content-between dashed_border">
+                        <p class="mb-0">Terms</p>
+                        <p class="mb-0">Exp. 05/04/2024</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="mx-3 custom_card-01">
+                  <a href="#"
+                    class="border overflow-hidden shadow row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                      <div class="h-100 d-flex flex-column">
+                        <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                          <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                            alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                      <div class="p-2 position-relative">
+                        <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                          <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0 mb-sm-2">
+                          <li class="d-flex align-items-center gap-1">
+                            <p class="mb-0 small text-uppercase">Deal</p>
+                          </li>
+                          <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                        </ul>
+                        <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                        <p class="mb-0">
+                          Up to $40 Off Walmart Coupon - Valid on Any $50+
+                        </p>
+                      </div>
+                      <div class="px-2 small py-1 d-block d-sm-flex justify-content-between dashed_border">
+                        <p class="mb-0">Terms</p>
+                        <p class="mb-0">Exp. 05/04/2024</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="mx-3 custom_card-01">
+                  <a href="#"
+                    class="border overflow-hidden shadow row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                      <div class="h-100 d-flex flex-column">
+                        <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                          <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                            alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                      <div class="p-2 position-relative">
+                        <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                          <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0 mb-sm-2">
+                          <li class="d-flex align-items-center gap-1">
+                            <p class="mb-0 small text-uppercase">Deal</p>
+                          </li>
+                          <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                        </ul>
+                        <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                        <p class="mb-0">
+                          Up to $40 Off Walmart Coupon - Valid on Any $50+
+                        </p>
+                      </div>
+                      <div class="px-2 small py-1 d-block d-sm-flex justify-content-between dashed_border">
+                        <p class="mb-0">Terms</p>
+                        <p class="mb-0">Exp. 05/04/2024</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-decoration-none text-dark small" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-decoration-none text-dark small" href="#">All stores</a></li>
+                <li class="breadcrumb-item active small" aria-current="page">Lowe's Promo Codes</li>
+              </ol>
+            </nav>
+            <div class="p-4 bg-white rounded shadow mb-3">
+              <h5 class="fw-bold mb-4">Best Lowe's Promo Codes & Deals</h5>
+              <table class="table">
+                <thead>
+                  <tr class="row">
+                    <th class="text-start col-6" scope="col">Description</th>
+                    <th class="text-center col-3" scope="col">Type</th>
+                    <th class="text-center col-3" scope="col">Expires</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="row">
+                    <td class="text-start col-6">Get a $5 Off $50 Lowe's Promo Code with Text Sign Up</td>
+                    <td class="text-center col-3">Code</td>
+                    <td class="text-center col-3">2/3/2023</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="text-start col-6">Get a $5 Off $50 Lowe's Promo Code with Text Sign Up</td>
+                    <td class="text-center col-3">Deal</td>
+                    <td class="text-center col-3">4/2/2030</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="text-start col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                      laudantium.</td>
+                    <td class="text-center col-3">Deal</td>
+                    <td class="text-center col-3">23/10/26</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="text-start col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                      laudantium.</td>
+                    <td class="text-center col-3">Deal</td>
+                    <td class="text-center col-3">23/10/26</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="text-start col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                      laudantium.</td>
+                    <td class="text-center col-3">Deal</td>
+                    <td class="text-center col-3">23/10/26</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- RIGHT PANEL -->
+          <div class="col-12 col-xl-4 pt-3">
+            <div class="d-none d-xl-block bg-white px-3 py-2 rounded shadow">
+              <div class="right-pane-img text-center">
+                <img src="https://coupons.businessinsider.com/images/fit-in/240x120/images/l/Lowes_Logo.png" alt="" />
+              </div>
+              <div class="text-center text-xl-start">
+                <h5 class="fw-bold">Lowe's promocodes for May</h5>
+                <p>Save with our 31 free Lowe's coupons</p>
+              </div>
+            </div>
+            <!-- nav and tabs button -->
+            <div class="d-none d-xl-flex align-items-center my-3 bg-white py-4 shadow rounded m-auto">
+              <div class="nav flex-column nav-pills w-100 px-4 m-auto" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+                <button class="w-100 rounded bg-cst-btn active border-0 my-1 p-2 border shadow" id="v-pills-all-tab"
+                  data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab"
+                  aria-controls="v-pills-all" aria-selected="true">
+                  <svg  class="inner-svg" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.24917 9.82236L1.42667 5.99986L0.125 7.29236L5.24917 12.4165L16.2492 1.41652L14.9567 0.124023L5.24917 9.82236Z"
+                      ></path>
+                  </svg>
+                  All (11)
+                </button>
+                <button class="w-100 rounded bg-cst-btn border-0 my-1 p-2 border shadow" id="v-pills-coupons-tab"
+                  data-bs-toggle="pill" data-bs-target="#v-pills-coupons" type="button" role="tab"
+                  aria-controls="v-pills-coupons" aria-selected="false">
+                  <svg  class="inner-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18.6265 9.46177L10.5323 1.3676C10.1932 1.02844 9.72565 0.835938 9.23982 0.835938H2.66732C1.65898 0.835938 0.833984 1.66094 0.833984 2.66927V9.24177C0.833984 9.7276 1.02648 10.1951 1.37482 10.5343L9.46898 18.6284C10.184 19.3434 11.3482 19.3434 12.0632 18.6284L18.6357 12.0559C19.3507 11.3409 19.3507 10.1859 18.6265 9.46177ZM4.95898 6.33594C4.19815 6.33594 3.58398 5.72177 3.58398 4.96094C3.58398 4.2001 4.19815 3.58594 4.95898 3.58594C5.71982 3.58594 6.33398 4.2001 6.33398 4.96094C6.33398 5.72177 5.71982 6.33594 4.95898 6.33594Z"
+                      ></path>
+                  </svg> Online Coupons (12)
+                </button>
+                <button class="w-100 rounded bg-cst-btn border-0 my-1 p-2 border shadow" id="v-pills-deals-tab"
+                  data-bs-toggle="pill" data-bs-target="#v-pills-deals" type="button" role="tab"
+                  aria-controls="v-pills-deals" aria-selected="false">
+                  <svg  class="inner-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.8724 7.08571C5.64156 7.08571 7.08073 5.64655 7.08073 3.87738C7.08073 2.10821 5.64156 0.669045 3.8724 0.669045C2.10323 0.669045 0.664062 2.10821 0.664062 3.87738C0.664062 5.64655 2.10323 7.08571 3.8724 7.08571ZM3.8724 2.50238C4.63323 2.50238 5.2474 3.11655 5.2474 3.87738C5.2474 4.63821 4.63323 5.25238 3.8724 5.25238C3.11156 5.25238 2.4974 4.63821 2.4974 3.87738C2.4974 3.11655 3.11156 2.50238 3.8724 2.50238Z"
+                      fill="#"></path>
+                    <path d="M14.0382 0.665039L0.666353 14.0369L1.9627 15.3332L15.3346 1.96139L14.0382 0.665039Z"
+                      ></path>
+                    <path
+                      d="M12.1224 8.91905C10.3532 8.91905 8.91406 10.3582 8.91406 12.1274C8.91406 13.8965 10.3532 15.3357 12.1224 15.3357C13.8916 15.3357 15.3307 13.8965 15.3307 12.1274C15.3307 10.3582 13.8916 8.91905 12.1224 8.91905ZM12.1224 13.5024C11.3616 13.5024 10.7474 12.8882 10.7474 12.1274C10.7474 11.3665 11.3616 10.7524 12.1224 10.7524C12.8832 10.7524 13.4974 11.3665 13.4974 12.1274C13.4974 12.8882 12.8832 13.5024 12.1224 13.5024Z"
+                      ></path>
+                  </svg>
+                  Deals (13)
+                </button>
+                <button class="w-100 rounded bg-cst-btn border-0 my-1 p-2 border shadow" id="v-pills-verified-tab"
+                  data-bs-toggle="pill" data-bs-target="#v-pills-verified" type="button" role="tab"
+                  aria-controls="v-pills-verified" aria-selected="false">
+                  <svg  class="inner-svg" xmlns="http://www.w3.  org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.95562 0.173974C7.45002 0.401384 6.86962 0.401294 6.36462 0.172484C5.45536 -0.239546 4.38189 0.109294 3.88853 0.977144L3.85286 1.03987C3.57638 1.52621 3.10866 1.87435 2.56344 1.99964C1.58966 2.22339 0.930913 3.13212 1.02113 4.12719L1.03502 4.28038C1.08357 4.81584 0.914483 5.3483 0.565903 5.75765L0.477293 5.86171C-0.157797 6.60751 -0.159247 7.70351 0.473853 8.45101L0.573763 8.56901C0.921363 8.97941 1.08903 9.51251 1.03892 10.0479L1.02637 10.182C0.933153 11.1781 1.60108 12.0924 2.57551 12.3189C3.11926 12.4454 3.59047 12.7954 3.86492 13.2815L3.88774 13.3219C4.38147 14.1964 5.46374 14.5488 6.37942 14.1364C6.88522 13.9087 7.46612 13.9087 7.97122 14.1379C8.88022 14.5503 9.95362 14.2017 10.4469 13.334L10.4826 13.2713C10.7591 12.7849 11.2268 12.4368 11.772 12.3115C12.7458 12.0877 13.4046 11.179 13.3144 10.1839L13.3004 10.0294C13.2519 9.49391 13.421 8.96151 13.7695 8.55221L13.8582 8.44811C14.4932 7.70231 14.4947 6.60631 13.8616 5.85879L13.7617 5.74087C13.4141 5.33045 13.2464 4.79731 13.2966 4.2618L13.309 4.12913C13.4023 3.13303 12.7346 2.21878 11.7601 1.9922C11.2162 1.86572 10.7449 1.51566 10.4704 1.02937L10.4477 0.989264C9.95392 0.114594 8.87162 -0.238066 7.95562 0.173974ZM5.45477 6.56001C4.61104 5.75039 3.44608 7.02911 4.20481 7.88731C4.72104 8.34731 5.44352 9.05571 5.93603 9.54851C6.10913 9.70951 6.33503 9.79341 6.56583 9.78261C6.79673 9.77181 7.01463 9.66721 7.17343 9.49071L10.0784 5.84765C10.8733 4.9671 9.60213 3.68177 8.79713 4.55706L6.48473 7.54431C6.25063 7.32387 5.93584 7.0217 5.6675 6.76412C5.59196 6.69161 5.52011 6.62264 5.45477 6.56001Z"></path>
+                  </svg>
+                  Verified (14)
+                </button>
+              </div>
+            </div>
+            <!-- About Store -->
+            <div class="shadow rounded mt-3 py-3 bg-white px-4">
+              <h5>About Lowe's</h5>
+              <p class="small">
+                Lucius Smith Lowe founded the North Wilkesboro Hardware
+                Store in North Carolina in 1921. After he passed away, his
+                kids re-named the store Lowe's in his honor. Since then,
+                Lowe's has become one of the leading hardware stores for
+                your home needs with over 2,000 stores. They offer a variety
+                of products like tools, appliances, outdoor decor, home
+                decor, and more.
+              </p>
+              <p class="small">
+                Whether you're renovating, starting a DIY project or need
+                new equipment, Lowe's has all of your home improvement
+                needs. Find huge savings during holidays like Christmas,
+                Fourth of July, and Memorial Day and stack your savings with
+                a Lowe's promo code. Lowe's knows how to help you improve
+                your home at a great price.
+              </p>
+            </div>
+            <!-- Share it  -->
+            <div class="py-3 d-flex justify-content-evenly px-4 my-3 text-center bg-white shadow rounded">
+              <h5 class="text-start">Share it!</h5>
+              <div>
+                <i class="fs-4 me-3 bi bi-facebook"></i>
+                <i class="fs-4 bi bi-twitter"></i>
+              </div>
+            </div>
+            <!-- Stores -->
+
+            <div class="bg-white px-4 mb-3 py-3 shadow rounded">
+              <h5>Coupons for popular stores</h5>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-1 mt-1 py-1 d-inline-block px-3 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+            </div>
+            <div class="bg-white px-4 mb-3 py-3 shadow rounded">
+              <h5>Submit a coupon</h5>
+              <p>Share your code to help others save money</p>
+              <button class="btn btn-primary bg-primary-subtle text-dark">
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="container bg-light mt-5">
+      <hr />
+      <ul
+        class="list-unstyled text-center text-md-start d-block mb-0 d-md-flex flex-row"
+      >
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+      </ul>
+      <hr class="mb-0" />
+    </div>
+  </main>
+  <footer class="bg-white p-4">
+    <section>
+      
+      <div class="container row mx-auto">
+        <div class="col-12 text-center text-lg-start col-md">
+          <a href="#!">
+            <svg class="" viewBox="0 0 930 320" xmlns="http://www.w3.org/2000/svg" height="40" width="140">
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M.4 3.1h62.7c34.9 0 53.1 18 53.1 40.2 0 15.3-8.6 25.7-20.6 31.1v.4c15.3 5.5 23.9 17.6 23.9 33.1 0 22.1-17 41.5-53.9 41.5H.4V3.1zm60.7 58c10.4 0 15.1-5.3 15.1-11.2s-4.7-11.4-15.1-11.4H42.7V61h18.4zm.6 52.9c11 0 16.3-5.3 16.3-12.1s-5.5-12.1-16.1-12.1H42.7V114h19zm66.8-24.1V3.1h42.7v86.4c0 16.3 8 24.9 21.7 24.9s22.3-8.6 22.3-25.1V3.1h42.9v86.8c0 36.8-24.7 63.3-65.2 63.3s-64.4-26.5-64.4-63.3zm238.4-79.7v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5C294.8 85.2 270 75 270 46.6 269.9 21 290.1 0 326.1 0c15.9 0 30.2 4.1 40.8 10.2zM387 3.1h42.7v146.3H387V3.1zm194.5 146.4h-40.7L488.1 71h-.2v78.5h-40.5V3.1h40.7l52.7 77.2h.2V3.1h40.5v146.4zM599.2 3.1h101.1v38h-58.4v17.6h52.5v34.5h-52.5v18.2h58.4v38H599.2V3.1zm208.2 7.1v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C710.4 21 730.6 0 766.6 0c15.9 0 30.2 4.1 40.8 10.2zm113 0v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C823.4 21 843.6 0 879.6 0c15.9 0 30.2 4.1 40.8 10.2zM94.1 316.9h42.7V170.6H94.1v146.3zm194.5-146.3H248v77.2h-.2l-52.7-77.2h-40.7v146.3H195v-78.5h.2l52.7 78.5h40.7V170.6zm68.8-3.2c-36 0-56.2 21-56.2 46.6 0 28.4 24.9 38.6 40.5 44.3 12 4.3 21.9 7.4 21.9 14.5 0 5.5-6.1 10.4-19.2 10.4-15.5 0-31.5-6.9-42.1-15.5v39.6c10.8 7.2 28.2 12.7 47.2 12.7 36.8 0 57.8-20.6 57.8-48.4 0-31.1-26.6-40.4-46.2-47.2-11.6-4.1-18-6.5-18-11.6s5.9-8.6 17.4-8.6c12.7 0 28.4 4.5 37.6 11v-37.6c-10.6-6.1-24.9-10.2-40.7-10.2zm59.9 149.5H460V170.6h-42.7v146.3zm103-38.6h8.2c22.1 0 36.4-12.5 36.4-34.5s-14.3-34.7-36.4-34.7h-8.2v69.2zm87.8-34.5c0 44.1-33.3 73.1-81.1 73.1h-49.4V170.6H527c47.8 0 81.1 29.2 81.1 73.2zm11.5 73.1h101.1v-38h-58.4v-18.2h52.5v-34.5h-52.5v-17.6h58.4v-38H619.6v146.3zm168.3-77.2c10.8 0 19.2-5.1 19.2-15.3s-8.4-15.3-19.4-15.3h-9v30.6h9.2zm69.9 77.2h-50.3l-27.8-45.2h-1v45.2H736V170.6h52.1c36.6 0 62.1 16.3 62.1 50.9 0 13.7-6.1 33.7-30.4 43.9l38 51.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="col-12 text-center mt-lg-0 mt-4 col-md-12 col-lg">
+          <a class="text-decoration-none" href="#!">
+            <i class="bi bi-facebook fs-3 text-dark mx-4"></i>
+          </a>
+          <a class="text-decoration-none" href="#!">
+            <i class="bi bi-twitter fs-3 text-dark mx-4"></i>
+          </a>
+          <a class="text-decoration-none" href="#!"><i class="bi bi-linkedin fs-3 text-dark mx-4"></i></a>
+          <a class="text-decoration-none" href="#!"><i class="bi bi-youtube fs-3 text-dark mx-4"></i></a>
+          <a class="text-decoration-none" href="#!"><i class="bi bi-instagram fs-3 text-dark mx-4"></i></a>
+        </div>
+        <div class="col"></div>
+        <hr class="mt-4" />
+      </div>
+    </section>
+    <section>
+      <p class="small text-center mb-0">
+        * Copyright © 2024 Insider Inc. All rights reserved. Registration on
+        or use of this site constitutes acceptance of our Terms of Service and
+        Privacy Policy.
+      </p>
+      <div class="container bg-light bg-white mt-2">
+        <div
+          class="list-unstyled text-center d-block d-lg-flex bg-white justify-content-center align-content-center flex-row">
+          <a class="me-4 ps-4 small link-hr text-dark" href="#!">Lorem </a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+        </div>
+      </div>
+      <div class="container bg-light bg-white mt-2">
+        <ul class="list-unstyled text-center text-md-start d-block d-md-flex bg-white justify-content-center flex-row">
+          <li class="me-4 -start ps-4">
+            <a class="small link-hr text-dark" href="#!">International Editions:
+            </a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">INTL</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">AT</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">DE</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">ES</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">IN</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">JP </a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">MX</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">NL</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">PL</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="text-center mt-5">
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+      </div>
+      <div class="text-center">
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+      </div>
+    </section>
+
+    <span class="" href="" id="btn-back-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+        class="bi bi-arrow-up-circle-fill bg-csts border rounded-circle" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+      </svg>
+    </span>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

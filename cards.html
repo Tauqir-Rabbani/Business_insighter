@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cards</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+    @property --myColor1 {
+        syntax: "<color>";
+        initial-value: #f5f9fe;
+        inherits: false;
+    }
+
+    .custom_card-01>a {
+        height: 175px;
+    }
+
+    .custom_card-bg {
+        transition: color .3s linear, --myColor1 .3s;
+        background: var(--myColor1);
+        color: #0463E6;
+    }
+
+    .custom_card-svg {
+        top: 60%;
+        right: 0%;
+    }
+
+    .custom_card-svg>svg {
+        transform: translateX(-20px);
+        transition: transform .2s linear;
+    }
+
+    .custom_card-01:hover {
+        
+        .custom_card-svg>svg {
+            transform: translateX(0px);
+        }
+        
+        .custom_card-bg {
+            --myColor1: #0463E6;
+            color: #fff;
+        }
+    }
+
+
+
+    .dashed_border {
+        border-top: 1px dashed #d9d9d9;
+    }
+</style>
+
+<body>
+
+    <main class="bg-light">
+        <section class="pt-5 mt-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-9">
+                        <div class="row gx-5 gy-3">
+                            <!-- new -->
+                           <div class="col-lg-6 col-md-6">
+                                <a href="#" class="border rounded overflow-hidden row text-decoration-none text-dark">
+                                    <div class="col-3 p-0">
+                                        <div class="h-100 d-flex flex-column">
+                                            <img src="https://www.vesturedebate.com/media/images/stores/comenii.png"
+                                                class="img-fluid w-100 object-fit-cover flex-grow-1 h-100" alt="">
+                                            <div
+                                                class="bg-secondary d-flex align-items-center justify-content-between p-1">
+                                                <p class="mb-0 text-white small ps-2">Verified</p>
+                                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1.1rem"
+                                                    height="1.1rem" viewBox="0 0 96.000000 96.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                                        fill="#ffffff" stroke="none">
+                                                        <path
+                                                            d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z" />
+                                                        <path
+                                                            d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                                        <div class="pt-3 ps-2 pe-0 pe-md-5">
+                                            <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem">
+                                                            <path
+                                                                d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mb-0 small text-uppercase text-white">Code</p>
+                                                </li>
+                                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"  width="1rem" height="1rem"
+                                                            viewBox="0 0 384 512">
+                                                            <path
+                                                                d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mb-0 small text-uppercase text-white">Deal</p>
+                                                </li>
+                                                <li class="bg-secondary-subtle px-2">
+                                                    <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Up to $40 Off Walmart Coupon - Valid on Any $50+
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                                            <p class="mb-0">Terms</p>
+                                            <p class="mb-0">Exp. 05/04/2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- old -->
+                            <div class="col-lg-6 col-md-6 custom_card-01">
+                                <a href="#"
+                                    class="border rounded overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                                    <div class="col-3 p-0">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                                                <p class="text-uppercase h1 fw-bolder text-center mb-0">
+                                                    $40
+                                                    Off
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="bg-secondary d-flex align-items-center justify-content-between p-1">
+                                                <p class="mb-0 text-white small ps-2">Verified</p>
+                                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1.1rem"
+                                                    height="1.1rem" viewBox="0 0 96.000000 96.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                                        fill="#ffffff" stroke="none">
+                                                        <path
+                                                            d="M427 832 l-48 -49 -68 12 -69 12 -6 -51 c-12 -88 -14 -91 -77 -121 -32 -16 -59 -30 -59 -32 0 -2 14 -30 30 -63 l30 -60 -31 -61 c-16 -34 -29 -62 -27 -64 2 -1 26 -14 55 -29 61 -30 69 -42 78 -117 l7 -55 66 11 67 12 53 -51 52 -50 53 50 52 51 67 -12 66 -11 7 54 c10 77 10 78 74 113 31 18 57 33 59 35 2 1 -11 29 -27 63 l-31 61 31 61 c16 34 29 62 27 63 -2 2 -28 17 -59 35 -64 35 -64 36 -74 113 l-7 55 -68 -12 -69 -12 -48 49 c-26 26 -50 48 -53 48 -3 0 -27 -22 -53 -48z m93 -72 c40 -39 40 -39 91 -30 29 6 53 10 55 10 1 0 6 -25 9 -55 7 -55 9 -56 56 -81 27 -13 49 -26 49 -29 0 -2 -10 -25 -22 -50 l-22 -45 22 -45 c12 -25 22 -48 22 -50 0 -3 -22 -16 -49 -29 -47 -25 -49 -26 -56 -81 -3 -30 -8 -55 -9 -55 -2 0 -26 4 -55 10 -51 9 -51 9 -91 -30 l-40 -39 -38 40 -39 39 -53 -10 c-29 -5 -54 -10 -56 -10 -1 0 -6 25 -9 55 -7 55 -9 56 -56 81 -27 13 -49 26 -49 29 0 2 10 25 22 50 l22 45 -22 45 c-12 25 -22 48 -22 50 0 3 22 16 49 29 48 25 49 26 56 81 7 56 7 56 36 51 86 -17 82 -18 119 23 19 21 36 39 37 40 1 1 20 -17 43 -39z" />
+                                                        <path
+                                                            d="M513 508 l-93 -93 -50 50 -50 49 -22 -22 -23 -22 73 -73 72 -72 116 116 116 117 -21 21 c-11 11 -22 21 -24 21 -1 0 -44 -42 -94 -92z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 p-0 d-flex flex-column justify-content-between">
+                                        <div class="pt-3 ps-2 pe-0 pe-md-5 position-relative">
+                                            <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                                                <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem">
+                                                            <path
+                                                                d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mb-0 small text-uppercase text-white">Code</p>
+                                                </li>
+                                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                                            viewBox="0 0 384 512">
+                                                            <path
+                                                                d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mb-0 small text-uppercase text-white">Deal</p>
+                                                </li>
+                                                <li class="bg-secondary-subtle px-2">
+                                                    <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Up to $40 Off Walmart Coupon - Valid on Any $50+
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                                            <p class="mb-0">Terms</p>
+                                            <p class="mb-0">Exp. 05/04/2024</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                         
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="border-bottom">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <div class="p-4 bg-dark-subtle shadow">
+                                    <img src="https://www.vesturedebate.com/media/images/stores/comenii.png"
+                                        class="img-fluid shadow rounded" alt="" width="123" height="61">
+                                </div>
+                            </div>
+                            <div class="text-center mb-4">
+                                <p
+                                    class="text-center fw-bold h3 text-decoration-underline border-bottom border-2 border-dark d-inline text-uppercase">
+                                    COMENII: </p>
+                            </div>
+                            <p>Comenii is a smaller
+                                scrubs and medical uniform store that markets products and services
+                                at comenii
+                            </p>
+                        </div>
+                        <div class="pt-3">
+                            <p class="fs-5 text-center"><strong
+                                    class="text-decoration-underline me-1 fs-4">Views:</strong>175</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

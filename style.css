@@ -1,0 +1,176 @@
+
+  .bg-wsearch {
+    background: url(https://coupons.businessinsider.com/images/1800x/search-background_11.png);
+  }
+
+  .img-ft {
+    width: 25%;
+  }
+
+  @media (min-width: 500px) {
+    .img-ft {
+      width: 15%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .img-ft {
+      width: 5%;
+    }
+  }
+
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    color: #111111;
+  }
+
+  .link-hr {
+    text-decoration: none;
+  }
+
+  .link-hr:hover {
+    text-decoration: underline;
+  }
+
+  .bg-csts {
+    background-color: rgba(243, 250, 255, 0.575);
+  }
+
+  .shadow-0 {
+    box-shadow: none !important;
+  }
+
+  .bg-custom {
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .bg-catlist {
+    background: url(https://coupons.businessinsider.com/images/1800x/category-background-1_6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .link2 {
+    transition: all 0.2s;
+    color: black;
+  }
+
+  .link2:hover {
+    text-decoration: underline !important;
+    background: #00000011;
+    color: steelblue;
+  }
+
+  .main-cards {
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .set-cat {
+    max-width: 400px;
+  }
+
+  .main-cards:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.527);
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+  }
+
+  .splide__pagination {
+    top: 100% !important;
+    bottom: 0 !important;
+  }
+
+  .splide__pagination__page.is-active {
+    background: #0463e6 !important;
+  }
+
+  .cat-list {
+    width: 180px;
+    height: 150px;
+  }
+
+  .bi-star path {
+    fill: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    .new-bd {
+      border-left: 0 !important;
+    }
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+
+  .noscroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
+  .custom_card-01>a {
+    height: 180px;
+  }
+
+  .custom_card-bg {
+    transition: color 0.3s linear, --myColor1 0.3s;
+    background: var(--myColor1);
+    color: #0463e6;
+  }
+
+  .custom_card-svg {
+    top: 60%;
+    right: 0%;
+  }
+
+  .custom_card-svg>svg {
+    transform: translateX(-20px);
+    transition: transform 0.2s linear;
+  }
+
+  .custom_card-01:hover {
+    .custom_card-svg>svg {
+      transform: translateX(0px);
+    }
+  }
+
+  /* from str_single */
+  .bg-cst-btn:hover {
+    background: #285372 !important;
+    color: white;
+    .inner-svg{
+      fill: #ffffff;
+    }
+  }
+  .inner-svg{
+    fill: #285372;
+  }
+  .bg-cst-btn.active {
+    background: #285372 !important;
+    color: white;
+    .inner-svg{
+      fill: #ffffff;
+    }
+  }
+.custom_small_01{
+  font-size: 12px;
+}
+.most_popular{
+  list-style: decimal;
+  font-size: 1rem;
+}
+.most_popular > li::marker{
+  font-size: 21px;
+  font-weight: 900;
+  color: #0463e6;
+}

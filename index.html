@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Business Insider</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+</head>
+
+
+<body class="bg-light">
+  <header id="back-top">
+    <nav class="navbar navbar-expand-lg navbar-white bg-light">
+      <div class="container-fluid container-lg">
+        <button class="d-block border-0 bg-light" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="pe-4 m-auto d-lg-block d-none">
+          <a class="" href="/">
+            <svg class="" viewBox="0 0 1365 120" xmlns="http://www.w3.org/2000/svg" height="80" width="400">
+              <title>Business Insider logo</title>
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M0 2.46h49.1c27.31 0 41.59 14.12 41.59 31.46 0 11.97-6.75 20.1-16.11 24.4v.31c11.97 4.3 18.72 13.81 18.72 25.93 0 17.34-13.35 32.53-42.2 32.53H0V2.46Zm47.57 45.42c8.13 0 11.82-4.14 11.82-8.75s-3.68-8.9-11.82-8.9H33.15v17.65h14.42Zm.46 41.43c8.59 0 12.74-4.14 12.74-9.51s-4.3-9.51-12.58-9.51H33.15v19.03h14.88Zm52.32-18.87V2.46h33.45v67.67c0 12.74 6.29 19.49 17.03 19.49s17.49-6.75 17.49-19.64V2.46h33.61v67.98c0 28.85-19.33 49.57-51.1 49.57s-50.49-20.72-50.49-49.57ZM287.1 7.98v29.46c-7.21-5.06-19.49-8.59-29.46-8.59-9.05 0-13.66 2.92-13.66 6.75s5.06 5.83 14.12 9.05c15.35 5.37 36.21 12.58 36.21 36.98 0 21.79-16.42 37.9-45.27 37.9-14.88 0-28.54-4.3-36.98-9.97v-31c8.29 6.75 20.87 12.12 32.99 12.12 10.28 0 15.04-3.84 15.04-8.13 0-5.52-7.83-7.98-17.19-11.36-12.28-4.45-31.76-12.43-31.76-34.68 0-20.1 15.81-36.52 44.04-36.52 12.43 0 23.63 3.22 31.92 7.98Zm15.8-5.52h33.45v114.63H302.9V2.46Zm152.38 114.63h-31.92l-41.28-61.53h-.15v61.53h-31.76V2.46h31.92l41.28 60.46h.15V2.46h31.76v114.63ZM469.09 2.46h79.18v29.77h-45.73v13.81h41.12v27.01h-41.12v14.27h45.73v29.77h-79.18V2.46Zm163.12 5.52v29.46c-7.21-5.06-19.49-8.59-29.46-8.59-9.05 0-13.66 2.92-13.66 6.75s5.06 5.83 14.12 9.05c15.35 5.37 36.21 12.58 36.21 36.98 0 21.79-16.42 37.9-45.27 37.9-14.88 0-28.54-4.3-36.98-9.97v-31c8.29 6.75 20.87 12.12 32.99 12.12 10.28 0 15.04-3.84 15.04-8.13 0-5.52-7.83-7.98-17.19-11.36-12.28-4.45-31.76-12.43-31.76-34.68 0-20.1 15.81-36.52 44.04-36.52 12.43 0 23.63 3.22 31.92 7.98Zm88.54 0v29.46c-7.21-5.06-19.49-8.59-29.46-8.59-9.05 0-13.66 2.92-13.66 6.75s5.06 5.83 14.12 9.05c15.35 5.37 36.21 12.58 36.21 36.98 0 21.79-16.42 37.9-45.27 37.9-14.88 0-28.54-4.3-36.98-9.97v-31c8.29 6.75 20.87 12.12 32.99 12.12 10.28 0 15.04-3.84 15.04-8.13 0-5.52-7.83-7.98-17.19-11.36-12.28-4.45-31.76-12.43-31.76-34.68 0-20.1 15.81-36.52 44.04-36.52 12.43 0 23.63 3.22 31.92 7.98Zm45.97 109.33h33.45V2.69h-33.45v114.63ZM919.08 2.69h-31.76v60.46h-.15L845.89 2.69h-31.92v114.63h31.76V55.79h.15l41.28 61.53h31.92V2.69ZM972.92.23c-28.24 0-44.04 16.42-44.04 36.52 0 22.25 19.49 30.23 31.76 34.68 9.36 3.38 17.19 5.83 17.19 11.36 0 4.3-4.76 8.13-15.04 8.13-12.12 0-24.71-5.37-32.99-12.12v31c8.44 5.68 22.1 9.97 36.98 9.97 28.85 0 45.27-16.11 45.27-37.9 0-24.4-20.87-31.61-36.21-36.98-9.05-3.22-14.12-5.06-14.12-9.05s4.6-6.75 13.66-6.75c9.97 0 22.25 3.53 29.46 8.59V8.21C996.55 3.45 985.35.23 972.92.23Zm46.94 117.08h33.45V2.69h-33.45v114.63Zm80.71-30.23h6.45c17.34 0 28.54-9.82 28.54-27.01s-11.2-27.16-28.54-27.16h-6.45v54.17Zm68.75-27.01c0 34.53-26.09 57.24-63.53 57.24h-38.67V2.69h38.67c37.44 0 63.53 22.86 63.53 57.39Zm9.07 57.24h79.18V87.54h-45.73V73.27h41.12V46.26h-41.12V32.45h45.73V2.69h-79.18v114.63Zm131.83-60.46c8.44 0 15.04-3.99 15.04-11.97s-6.6-11.97-15.19-11.97h-7.06v23.94h7.21Zm54.78 60.46h-39.44l-21.79-35.45h-.77v35.45h-33.45V2.69h40.82c28.7 0 48.64 12.74 48.64 39.9 0 10.74-4.76 26.39-23.79 34.37l29.77 40.36Z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="pe-4 m-auto d-block d-lg-none">
+          <a href="https://www.businessinsider.com/" class="pe-2 d-block d-lg-none"
+            data-analytics-product-module="masthead">
+            <svg class="" viewBox="0 0 930 320" xmlns="http://www.w3.org/2000/svg" height="40" width="140">
+              <title>Business Insider logo</title>
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M.4 3.1h62.7c34.9 0 53.1 18 53.1 40.2 0 15.3-8.6 25.7-20.6 31.1v.4c15.3 5.5 23.9 17.6 23.9 33.1 0 22.1-17 41.5-53.9 41.5H.4V3.1zm60.7 58c10.4 0 15.1-5.3 15.1-11.2s-4.7-11.4-15.1-11.4H42.7V61h18.4zm.6 52.9c11 0 16.3-5.3 16.3-12.1s-5.5-12.1-16.1-12.1H42.7V114h19zm66.8-24.1V3.1h42.7v86.4c0 16.3 8 24.9 21.7 24.9s22.3-8.6 22.3-25.1V3.1h42.9v86.8c0 36.8-24.7 63.3-65.2 63.3s-64.4-26.5-64.4-63.3zm238.4-79.7v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5C294.8 85.2 270 75 270 46.6 269.9 21 290.1 0 326.1 0c15.9 0 30.2 4.1 40.8 10.2zM387 3.1h42.7v146.3H387V3.1zm194.5 146.4h-40.7L488.1 71h-.2v78.5h-40.5V3.1h40.7l52.7 77.2h.2V3.1h40.5v146.4zM599.2 3.1h101.1v38h-58.4v17.6h52.5v34.5h-52.5v18.2h58.4v38H599.2V3.1zm208.2 7.1v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C710.4 21 730.6 0 766.6 0c15.9 0 30.2 4.1 40.8 10.2zm113 0v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C823.4 21 843.6 0 879.6 0c15.9 0 30.2 4.1 40.8 10.2zM94.1 316.9h42.7V170.6H94.1v146.3zm194.5-146.3H248v77.2h-.2l-52.7-77.2h-40.7v146.3H195v-78.5h.2l52.7 78.5h40.7V170.6zm68.8-3.2c-36 0-56.2 21-56.2 46.6 0 28.4 24.9 38.6 40.5 44.3 12 4.3 21.9 7.4 21.9 14.5 0 5.5-6.1 10.4-19.2 10.4-15.5 0-31.5-6.9-42.1-15.5v39.6c10.8 7.2 28.2 12.7 47.2 12.7 36.8 0 57.8-20.6 57.8-48.4 0-31.1-26.6-40.4-46.2-47.2-11.6-4.1-18-6.5-18-11.6s5.9-8.6 17.4-8.6c12.7 0 28.4 4.5 37.6 11v-37.6c-10.6-6.1-24.9-10.2-40.7-10.2zm59.9 149.5H460V170.6h-42.7v146.3zm103-38.6h8.2c22.1 0 36.4-12.5 36.4-34.5s-14.3-34.7-36.4-34.7h-8.2v69.2zm87.8-34.5c0 44.1-33.3 73.1-81.1 73.1h-49.4V170.6H527c47.8 0 81.1 29.2 81.1 73.2zm11.5 73.1h101.1v-38h-58.4v-18.2h52.5v-34.5h-52.5v-17.6h58.4v-38H619.6v146.3zm168.3-77.2c10.8 0 19.2-5.1 19.2-15.3s-8.4-15.3-19.4-15.3h-9v30.6h9.2zm69.9 77.2h-50.3l-27.8-45.2h-1v45.2H736V170.6h52.1c36.6 0 62.1 16.3 62.1 50.9 0 13.7-6.1 33.7-30.4 43.9l38 51.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button> -->
+
+    <div class="offcanvas offcanvas-start p-4 pt-5" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="">
+          <a href="https://www.businessinsider.com/" class="" data-analytics-product-module="masthead">
+            <svg class="" viewBox="0 0 930 320" xmlns="http://www.w3.org/2000/svg" height="40" width="140">
+              <title>Business Insider logo</title>
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M.4 3.1h62.7c34.9 0 53.1 18 53.1 40.2 0 15.3-8.6 25.7-20.6 31.1v.4c15.3 5.5 23.9 17.6 23.9 33.1 0 22.1-17 41.5-53.9 41.5H.4V3.1zm60.7 58c10.4 0 15.1-5.3 15.1-11.2s-4.7-11.4-15.1-11.4H42.7V61h18.4zm.6 52.9c11 0 16.3-5.3 16.3-12.1s-5.5-12.1-16.1-12.1H42.7V114h19zm66.8-24.1V3.1h42.7v86.4c0 16.3 8 24.9 21.7 24.9s22.3-8.6 22.3-25.1V3.1h42.9v86.8c0 36.8-24.7 63.3-65.2 63.3s-64.4-26.5-64.4-63.3zm238.4-79.7v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5C294.8 85.2 270 75 270 46.6 269.9 21 290.1 0 326.1 0c15.9 0 30.2 4.1 40.8 10.2zM387 3.1h42.7v146.3H387V3.1zm194.5 146.4h-40.7L488.1 71h-.2v78.5h-40.5V3.1h40.7l52.7 77.2h.2V3.1h40.5v146.4zM599.2 3.1h101.1v38h-58.4v17.6h52.5v34.5h-52.5v18.2h58.4v38H599.2V3.1zm208.2 7.1v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C710.4 21 730.6 0 766.6 0c15.9 0 30.2 4.1 40.8 10.2zm113 0v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C823.4 21 843.6 0 879.6 0c15.9 0 30.2 4.1 40.8 10.2zM94.1 316.9h42.7V170.6H94.1v146.3zm194.5-146.3H248v77.2h-.2l-52.7-77.2h-40.7v146.3H195v-78.5h.2l52.7 78.5h40.7V170.6zm68.8-3.2c-36 0-56.2 21-56.2 46.6 0 28.4 24.9 38.6 40.5 44.3 12 4.3 21.9 7.4 21.9 14.5 0 5.5-6.1 10.4-19.2 10.4-15.5 0-31.5-6.9-42.1-15.5v39.6c10.8 7.2 28.2 12.7 47.2 12.7 36.8 0 57.8-20.6 57.8-48.4 0-31.1-26.6-40.4-46.2-47.2-11.6-4.1-18-6.5-18-11.6s5.9-8.6 17.4-8.6c12.7 0 28.4 4.5 37.6 11v-37.6c-10.6-6.1-24.9-10.2-40.7-10.2zm59.9 149.5H460V170.6h-42.7v146.3zm103-38.6h8.2c22.1 0 36.4-12.5 36.4-34.5s-14.3-34.7-36.4-34.7h-8.2v69.2zm87.8-34.5c0 44.1-33.3 73.1-81.1 73.1h-49.4V170.6H527c47.8 0 81.1 29.2 81.1 73.2zm11.5 73.1h101.1v-38h-58.4v-18.2h52.5v-34.5h-52.5v-17.6h58.4v-38H619.6v146.3zm168.3-77.2c10.8 0 19.2-5.1 19.2-15.3s-8.4-15.3-19.4-15.3h-9v30.6h9.2zm69.9 77.2h-50.3l-27.8-45.2h-1v45.2H736V170.6h52.1c36.6 0 62.1 16.3 62.1 50.9 0 13.7-6.1 33.7-30.4 43.9l38 51.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body noscroll">
+        <ul class="list-unstyled p-5">
+          <li class="fs-4 fw-semibold mb-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Lorem</li>
+          <li class="fs-4 fw-semibold my-4">Item</li>
+          <li class="fs-4 fw-semibold my-4">Item</li>
+          <li class="fs-4 fw-semibold my-4">Item</li>
+          <li class="fs-4 fw-semibold my-4">
+            <div class="accordion border-0 bg-transparent" id="accordionExample">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header border-0">
+                  <button class="accordion-button fs-4 fw-semibold p-0 bg-transparent border-0 outline-0 collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Links
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled">
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                      <li class="fs-6 my-3">LOREM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-2" />
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid container-lg">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="list-unstyled mb-0 d-block d-lg-flex flex-row">
+            <hr />
+            <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+            <!-- <li class="dropdown-toggle  mx-3 mx-lg-4 fw-semibold fs-5" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                            <div class="dropdown-menu dropdown-menu-start">
+                                <div class="d-block d-lg-flex">
+                                    <ul class="list-unstyled mx-4">
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled mx-4">
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled mx-4">
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li> -->
+            <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+            <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+            <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 
+
+
+
+
+
+        <div class="container">
+            <ul class="list-unstyled mb-0 d-flex flex-row">
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+                <li class="dropdown-toggle  mx-3 mx-lg-4 fw-semibold fs-5" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                    <div class="dropdown-menu dropdown-menu-start">
+                        <div class="d-flex">
+                            <ul class="list-unstyled mx-4">
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                            </ul>
+                            <ul class="list-unstyled mx-4">
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                            </ul>
+                            <ul class="list-unstyled mx-4">
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item my-3" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+                <li class="mx-3 mx-lg-4 fw-semibold fs-5">lorem</li>
+            </ul>
+        </div> -->
+    <hr class="my-2" />
+  </header>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center my-3 text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+    </svg>
+    <p class="small mb-0 mx-2">
+      When you make a purchase, Business Insider earns a commission.
+    </p>
+  </div>
+
+  <main>
+    <section class="bg-wsearch">
+      <div class="container text-center py-5">
+        <h4 class="text-light py-3">
+          Save Today with Business Insider Coupons' Biggest and Best Online
+          Promo Codes
+        </h4>
+        <p class="text-light pb-3">
+          Shop with us for trending deals and big discounts! Spend less with
+          our hand-tested coupons.
+        </p>
+        <div class="m-auto pb-4">
+          <input class="col-12 col-md-8 col-lg-5 p-2" placeholder="Search 1000+ promocodes and deals " type="search" />
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="row container justify-content-center m-auto">
+
+            <div class="col-3 mx-3 custom_card-01">
+                <a href="#" class="border overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                        <div class="h-100 d-flex flex-column">
+                            <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                                <img width="80%" class="m-auto" src="img/Office_Depot.webp"
+                                    class="img-fluid rounded-top" alt="" />
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-between">
+                        <div class="p-2 position-relative">
+                            <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                                <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    width="1rem" height="1rem">
+                                    <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                            </div>
+                                <p class="mb-0 small text-uppercase text-white">Code</p>
+                            </li> 
+                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                            viewBox="0 0 384 512">
+                                            <path
+                                                d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                        </svg>
+                                    </div>
+                                    <p class="mb-0 small text-uppercase text-white">Deal</p>
+                                </li>
+
+                            </ul>
+                            <p>
+                                Up to $40 Off Walmart Coupon - Valid on Any $50+
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                            <p class="mb-0">Terms</p>
+                            <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 mx-3 custom_card-01">
+                <a href="#" class="border overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                        <div class="h-100 d-flex flex-column">
+                            <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                                <img width="80%" class="m-auto" src="img/Office_Depot.webp"
+                                    class="img-fluid rounded-top" alt="" />
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-between">
+                        <div class="p-2 position-relative">
+                            <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                                <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    width="1rem" height="1rem">
+                                    <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                            </div>
+                                <p class="mb-0 small text-uppercase text-white">Code</p>
+                            </li> 
+                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                            viewBox="0 0 384 512">
+                                            <path
+                                                d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                        </svg>
+                                    </div>
+                                    <p class="mb-0 small text-uppercase text-white">Deal</p>
+                                </li>
+
+                            </ul>
+                            <p>
+                                Up to $40 Off Walmart Coupon - Valid on Any $50+
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                            <p class="mb-0">Terms</p>
+                            <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 mx-3 custom_card-01">
+                <a href="#" class="border overflow-hidden row text-decoration-none text-dark bg-white shadow-sm">
+                    <div class="col-5 border-end p-0">
+                        <div class="h-100 d-flex flex-column">
+                            <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                                <img width="80%" class="m-auto" src="img/Office_Depot.webp"
+                                    class="img-fluid rounded-top" alt="" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-7 p-0 d-flex flex-column justify-content-between">
+                        <div class="p-2 position-relative">
+                            <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                                <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                 <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    width="1rem" height="1rem">
+                                    <path
+                                    d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                            </div>
+                                <p class="mb-0 small text-uppercase text-white">Code</p>
+                            </li> 
+                                <li class="d-flex align-items-center bg-secondary px-2 gap-1">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                            viewBox="0 0 384 512">
+                                            <path
+                                                d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                                        </svg>
+                                    </div>
+                                    <p class="mb-0 small text-uppercase text-white">Deal</p>
+                                </li>
+
+                            </ul>
+                            <p>
+                                Up to $40 Off Walmart Coupon - Valid on Any $50+
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2 small py-1 dashed_border">
+                            <p class="mb-0">Terms</p>
+                            <p class="mb-0">Exp. 05/04/2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>-->
+
+    <div class="container">
+      <h5 class="fw-bold mt-5">
+        Everyone Loves to Save with Our Free Coupons
+      </h5>
+      <p>
+        Give your wallet a break. Check out our most popular deals and biggest
+        savings to get tremendous discounts.
+      </p>
+
+      <section class="splide mt-5" id="slider1" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="mx-3 custom_card-01">
+                <a href="#" class="border overflow-hidden shadow row text-decoration-none text-dark bg-white shadow-sm">
+                  <div class="col-5 border-end p-0">
+                    <div class="h-100 d-flex flex-column">
+                      <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                        <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                          alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                    <div class="p-2 position-relative">
+                      <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                        <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                          </path>
+                        </svg>
+                      </div>
+                      <ul class="list-unstyled d-flex flex-wrap gap-2">
+                        <li class="d-flex align-items-center gap-1">
+                          <p class="mb-0 small text-uppercase">Deal</p>
+                        </li>
+                        <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                      </ul>
+                      <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                      <p class="mb-0">
+                        Up to $40 Off Walmart Coupon - Valid on Any $50+
+                      </p>
+                    </div>
+                    <div class="px-2 small py-1 dashed_border">
+                      <p class="mb-0">Exp. 05/04/2024</p>
+                      <p class="mb-0">Terms</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="mx-3 custom_card-01">
+                <a href="#"
+                  class="border overflow-hidden position-relative shadow row text-decoration-none text-dark bg-white shadow-sm">
+                  <div class="col-5 border-end p-0">
+                    <div class="h-100 d-flex flex-column">
+                      <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                        <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                          alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-absolute text-end p-0">
+                    <span class="m-0 py-1 px-3 text-light float-right bg-secondary">Exclusive</span>
+                  </div>
+                  <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                    <div class="p-2 position-relative">
+                      <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                        <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                          </path>
+                        </svg>
+                      </div>
+                      <ul class="list-unstyled d-flex flex-wrap gap-2">
+                        <li class="d-flex align-items-center gap-1">
+                          <p class="mb-0 small text-uppercase">Deal</p>
+                        </li>
+                        <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                      </ul>
+                      <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                      <p class="mb-0">
+                        Up to $40 Off Walmart Coupon - Valid on Any $50+
+                      </p>
+                    </div>
+                    <div class="px-2 small py-1 dashed_border">
+                      <p class="mb-0">Exp. 05/04/2024</p>
+                      <p class="mb-0">Terms</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="mx-3 custom_card-01">
+                <a href="#" class="border overflow-hidden shadow row text-decoration-none text-dark bg-white shadow-sm">
+                  <div class="col-5 border-end p-0">
+                    <div class="h-100 d-flex flex-column">
+                      <div class="custom_card-bg flex-grow-1 d-flex align-items-center">
+                        <img width="80%" class="m-auto" src="img/Office_Depot.webp" class="img-fluid rounded-top"
+                          alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 p-0 d-flex flex-column justify-content-evenly">
+                    <div class="p-2 position-relative">
+                      <div class="position-absolute me-3 custom_card-svg overflow-hidden">
+                        <svg width="1rem" height="1rem" viewBox="0 0 11 19" fill="#000"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.27624 0.58252L11 9.58252L1.27624 18.5825L9.53674e-07 17.4013L7.53591 10.4263L8.39972 9.58252L7.53591 8.73877L9.53674e-07 1.76377L1.27624 0.58252Z">
+                          </path>
+                        </svg>
+                      </div>
+                      <ul class="list-unstyled d-flex flex-wrap gap-2">
+                        <li class="d-flex align-items-center gap-1">
+                          <p class="mb-0 small text-uppercase">Deal</p>
+                        </li>
+                        <!-- <li class="bg-secondary-subtle px-2">
+                                                        <p class="mb-0 small text-uppercase text-dark">Today's Choice</p>
+                                                    </li> -->
+                      </ul>
+                      <p class="mb-0 fw-semibold">$25 Gift Card</p>
+                      <p class="mb-0">
+                        Up to $40 Off Walmart Coupon - Valid on Any $50+
+                      </p>
+                    </div>
+                    <div class="px-2 small py-1 dashed_border">
+                      <p class="mb-0">Exp. 05/04/2024</p>
+                      <p class="mb-0">Terms</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- 
+            
+            cat cards
+            
+            <div class="bg-warning cat-list text-center">
+            <img width="150px" height="120px" src="img/Bath_and_Body_Works.png" alt="alt">
+            <p>23 Coupons</p>
+        </div> -->
+
+    <div class="contianer-fluid container-xxl">
+      <h5 class="fw-bold mt-5">
+        Find Something to Love at Our Most Popular Stores
+      </h5>
+      <p>Get free coupons for major markdowns at your favorite stores.</p>
+      <div class="splide" id="slider2" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="bg-white shadow m-auto cat-list text-center">
+                <img width="150px" height="120px" src="img/Bath_and_Body_Works.png" alt="alt" />
+                <p>23 Coupons</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="bg-white shadow m-auto cat-list text-center">
+                <img width="150px" height="120px" src="img/Bath_and_Body_Works.png" alt="alt" />
+                <p>23 Coupons</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="bg-white shadow m-auto cat-list text-center">
+                <img width="150px" height="120px" src="img/Bath_and_Body_Works.png" alt="alt" />
+                <p>23 Coupons</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-auto mt-5 container">
+      <h5 class="fw-bold mt-5">Don't Miss Our Best Offers and Daily Deals</h5>
+      <p>
+        Use these working promo codes for instant savings on things you can't
+        live without.
+      </p>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+
+        <div class="position-relative set-cat border-white">
+            <div class="position-absolute w-100">
+                <h5 class="bg-custom py-2 ps-3
+                text-white">Health & Beauty</h5>
+            </div>
+            <div class="text-center">
+                <img class="img-fluid"
+                    src="https://coupons.businessinsider.com/images/1200x/Untitled-design---2024-02-13T141342.107_1.png"
+                    width="400px" height="190px" alt="">
+            </div>
+            <p class="my-2">BUY AT </p>
+            <div class="row pb-4 px-4">
+                <div class="col-3 mx- text-center">
+                    <a href="#!">
+                        <img class="img-fluid"
+                            src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 mx- text-center">
+                    <a href="#!">
+                        <img class="img-fluid"
+                            src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 mx- text-center">
+                    <a href="#!">
+                        <img class="img-fluid"
+                            src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 mx- text-center">
+                    <a href="#!">
+                        <img class="img-fluid"
+                            src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+    <section class="bg-catlist mt-5">
+      <div class="container-fluid container-xl text-center py-5">
+        <h5 class="fw-bold mt-5 text-start text-white">
+          The Top Offers in the Most Popular Categories
+        </h5>
+        <p class="text-start mb-4 text-white">
+          Explore the latest online and in-store coupons to save on
+          electronics, travel, beauty, home, fashion, and more.
+        </p>
+        <section class="splide" id="slide-cat" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="position-relative m-auto bg-white set-cat border-white border">
+                  <div class="position-absolute w-100">
+                    <h5 class="bg-custom py-2 ps-3 text-white text-start">
+                      Health & Beauty
+                    </h5>
+                  </div>
+                  <div class="text-center">
+                    <img class="img-fluid"
+                      src="https://coupons.businessinsider.com/images/1200x/Untitled-design---2024-02-13T141342.107_1.png"
+                      width="400px" height="190px" alt="" />
+                  </div>
+                  <p class="my-2 small text-start ps-3">BUY AT</p>
+                  <div class="row pb-4 px-4">
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- 
+        <section class="bg-catlist">
+            <div class="container text-center py-5">
+                <h5 class="fw-bold mt-5">
+                    Don't Miss Our Best Offers and Daily Deals
+                </h5>
+                <p>Use these working promo codes for instant savings on things you can't live without.</p>
+
+            </div>
+        </section>
+
+
+
+ -->
+
+    <div class="row m-auto mt-5 container">
+      <h5 class="fw-bold mt-5">Don't Miss Our Best Offers and Daily Deals</h5>
+      <p>
+        Use these working promo codes for instant savings on things you can't
+        live without.
+      </p>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center d-flex col-lg-4 col-xl-3 mt-4">
+        <div class="card rounded-0 main-cards" style="width: 18rem">
+          <img src="https://coupons.businessinsider.com/images/384x/busbestoffers_1.png" class="card-img-top"
+            alt="..." />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small mb-0">Deal</p>
+              <p class="small mb-0">category</p>
+            </div>
+            <h5 class="fw-bold">50% OFF</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-catlist mt-5">
+      <div class="container-fluid container-xl text-center py-5">
+        <h5 class="fw-bold mt-5 text-start text-white">
+          The Top Offers in the Most Popular Categories
+        </h5>
+        <p class="text-start mb-4 text-white">
+          Explore the latest online and in-store coupons to save on
+          electronics, travel, beauty, home, fashion, and more.
+        </p>
+        <section class="splide" id="slide-cat2" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="position-relative m-auto bg-white set-cat border-white border">
+                  <div class="position-absolute w-100">
+                    <h5 class="bg-custom py-2 ps-3 text-white text-start">
+                      Health & Beauty
+                    </h5>
+                  </div>
+                  <div class="text-center">
+                    <img class="img-fluid"
+                      src="https://coupons.businessinsider.com/images/1200x/Untitled-design---2024-02-13T141342.107_1.png"
+                      width="400px" height="190px" alt="" />
+                  </div>
+                  <p class="my-2 small text-start ps-3">BUY AT</p>
+                  <div class="row pb-4 px-4">
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-3 mx- text-center">
+                      <a href="#!">
+                        <img class="img-fluid main-cards"
+                          src="https://coupons.businessinsider.com/images/256x/images/n/no7beauty.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section>
+      <div class="row container m-auto">
+        <h5 class="fw-bold mt-5 text-center">
+          Why should you trust Business Insider Coupons?
+        </h5>
+        <p class="text-center mb-4">
+          Our team of professional shoppers scour the internet to find the
+          best online promo codes.
+        </p>
+        <div class="text-center col-6 col-lg-3 m-auto">
+          <div class="p-4">
+            <svg viewBox="0 0 36 36" font-size="2.25rem" width="1em" height="1em">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 0L21.9609 3.21973L27 2.41113L28.8193 7.18066L33.5889 9L32.7803 14.0391L36 18L32.7803 21.9609L33.5889 27L28.8193 28.8193L27 33.5889L21.9609 32.7803L18 36L14.0391 32.7803L9 33.5889L7.18066 28.8193L2.41113 27L3.21973 21.9609L0 18L3.21973 14.0391L2.41113 9L7.18066 7.18066L9 2.41113L14.0391 3.21973L18 0ZM18 11.584L19.8574 16.1221L24.7471 16.4854L21.0059 19.6553L22.1719 24.4189L18.0029 21.8379L13.834 24.4189L15 19.6553L11.2529 16.4854L16.1426 16.1221L18 11.584ZM18 7.82519C23.6191 7.82519 28.1748 12.3809 28.1748 18C28.1748 23.6191 23.6191 28.1748 18 28.1748C12.3809 28.1748 7.82519 23.6191 7.82519 18C7.82519 12.3809 12.3809 7.82519 18 7.82519Z"
+                fill="var(--palette-secondary-main)"></path>
+              <defs>
+                <linearGradient id="paint_star_linear" x1="10" y1="3.27826e-07" x2="-0.999999" y2="29"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--palette-secondary-main)"></stop>
+                  <stop offset="1" stop-color="var(--palette-secondary-main)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h6>600 Coupons</h6>
+          <p>added everyday</p>
+        </div>
+
+        <div class="text-center col-6 col-lg-3 m-auto">
+          <div class="p-4">
+            <svg viewBox="0 0 36 36" font-size="2.25rem" width="1em" height="1em">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.00809 0H29.284C29.8302 0 30.2741 0.448242 30.2741 0.996094C30.2741 1.54395 29.8273 1.99219 29.284 1.99219H6.00809C5.4619 1.99219 5.01794 1.54395 5.01794 0.996094C5.01502 0.448242 5.4619 0 6.00809 0ZM34.6349 12.6475V13.8486C34.6466 13.9629 34.6524 14.0771 34.6524 14.1914C34.6524 16.207 32.7743 17.8418 30.4581 17.8418C28.1419 17.8418 26.2639 16.207 26.2639 14.1914C26.2639 14.1064 26.2668 14.0186 26.2726 13.9336H26.1061C26.112 14.0186 26.1149 14.1035 26.1149 14.1914C26.1149 16.207 24.2368 17.8418 21.9206 17.8418C19.6044 17.8418 17.7264 16.207 17.7264 14.1914C17.7264 14.1064 17.7293 14.0186 17.7351 13.9336H17.5686C17.5745 14.0186 17.5774 14.1035 17.5774 14.1914C17.5774 16.207 15.6993 17.8418 13.3831 17.8418C11.0669 17.8418 9.18885 16.207 9.18885 14.1914C9.18885 14.1064 9.19177 14.0186 9.19761 13.9336H9.09246C9.0983 14.0186 9.10123 14.1035 9.10123 14.1914C9.10123 16.207 7.22315 17.8418 4.90695 17.8418C2.59075 17.8418 0.712676 16.207 0.712676 14.1914C0.712676 14.0918 0.718518 13.9951 0.72728 13.8984V12.6475H34.6349ZM4.91863 3.05859H30.5166L33.7791 10.0459H1.53634L4.91863 3.05859ZM0.990153 31.6436H4.53017V20.4229C4.58858 20.4258 4.647 20.4287 4.70542 20.4287H4.72002H4.7872H4.79888H4.80764H4.85438H4.86314H4.90403V20.4375H4.90695V20.4287C6.50755 20.4287 7.9884 19.916 9.14212 19.0664L9.15088 19.0723L9.15964 19.0781L9.1684 19.084L9.17717 19.0898L9.18593 19.0957L9.19469 19.1016L9.19761 19.1045L9.20345 19.1074L9.21222 19.1133L9.22098 19.1191L9.22974 19.125H9.23266L9.26187 19.1455L9.27063 19.1514L9.27355 19.1543L9.28816 19.1631L9.29692 19.1689L9.30568 19.1748L9.3086 19.1777L9.31444 19.1807L9.32321 19.1865L9.33197 19.1924L9.34073 19.1982L9.34657 19.2158L9.35534 19.2217L9.36118 19.2275L9.36994 19.2334L9.3787 19.2393L9.38746 19.2451L9.39623 19.251L9.40499 19.2568L9.41375 19.2627H9.41667L9.48385 19.3066L9.49261 19.3125L9.50138 19.3184L9.55395 19.3535L9.56271 19.3594L9.62697 19.3975L9.63865 19.4004L9.64742 19.4062L9.65618 19.4121L9.66494 19.418L9.6737 19.4238L9.68247 19.4297L9.69123 19.4355L9.69999 19.4414V26.7949H25.2912V19.6084C25.5424 19.4766 25.7878 19.3271 26.0185 19.166L26.0244 19.1602H26.0273L26.074 19.1279L26.0769 19.125L26.0915 19.1162L26.1061 19.1074L26.1295 19.0898H26.1324L26.1354 19.0869L26.185 19.0518C27.3446 19.916 28.8371 20.4375 30.4523 20.4375V20.4463H30.4552V20.4375H30.464V31.6494H34.004C34.5502 31.6494 34.9971 32.6279 34.9971 33.8262C34.9971 35.0244 34.5502 36.0029 34.004 36.0029H0.990153C0.446883 36.0029 0 35.0244 0 33.8262C0 32.625 0.446883 31.6436 0.990153 31.6436Z"
+                fill="var(--palette-secondary-main)"></path>
+              <defs>
+                <linearGradient id="paint_store_linear" x1="10" y1="3.27826e-07" x2="-0.999999" y2="29"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--palette-secondary-main)"></stop>
+                  <stop offset="1" stop-color="var(--palette-secondary-main)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h6>600 Coupons</h6>
+          <p>added everyday</p>
+        </div>
+
+        <div class="text-center col-6 col-lg-3 m-auto">
+          <div class="p-4">
+            <svg viewBox="0 0 36 33" font-size="2.25rem" width="1em" height="1em">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.0715 1.67791H15.2765C15.3867 1.6795 15.4955 1.70415 15.5961 1.75038C15.6968 1.7966 15.7874 1.86343 15.8623 1.94682L28.2781 15.8578C28.556 16.1654 28.771 16.5276 28.9103 16.9228C29.0495 17.318 29.1102 17.7381 29.0886 18.158C29.067 18.5779 28.9636 18.9891 28.7846 19.3668C28.6056 19.7446 28.3546 20.0813 28.0467 20.3569L17.1598 30.3822L17.1364 30.4034C16.8415 30.6901 16.4925 30.9112 16.1113 31.053C15.5338 31.2622 14.9086 31.2877 14.3169 31.1261C13.7252 30.9645 13.1942 30.6232 12.7928 30.1465L1.13263 16.6646C1.0618 16.5827 1.00746 16.4871 0.972761 16.3834C0.938067 16.2796 0.923712 16.1698 0.930532 16.0603L0.953964 15.7249L0.00205616 1.65978C-0.00617261 1.5412 0.0103594 1.42218 0.0505357 1.31076C0.090712 1.19934 0.153597 1.09811 0.234945 1.0139C0.316292 0.929698 0.414207 0.864481 0.522079 0.822655C0.62995 0.78083 0.745265 0.76337 0.860238 0.771455L14.8137 1.67791H14.8665C14.9343 1.66698 15.0028 1.66092 15.0715 1.65978V1.67791ZM24.0194 30.8596C23.8594 31.0071 23.6492 31.0829 23.4349 31.0704C23.2207 31.058 23.0201 30.9582 22.8771 30.7931C22.7342 30.6281 22.6607 30.4112 22.6728 30.1902C22.6849 29.9692 22.7815 29.7622 22.9416 29.6147L33.8695 19.5501C34.0181 19.4225 34.1389 19.264 34.2239 19.0848C34.3804 18.7274 34.4044 18.3231 34.2912 17.9487C34.2278 17.7618 34.1282 17.5901 33.9983 17.4441V17.426L21.5825 3.50592C21.4373 3.34284 21.3608 3.12692 21.3698 2.90564C21.3789 2.68437 21.4728 2.47587 21.6309 2.32602C21.7889 2.17617 21.9983 2.09723 22.2127 2.10658C22.4272 2.11593 22.6294 2.2128 22.7746 2.37587L35.1816 16.2959L35.2109 16.3292C35.483 16.6375 35.6925 16.9988 35.8271 17.3919C35.9617 17.785 36.0187 18.202 35.9946 18.6181C35.9706 19.0343 35.8661 19.4413 35.6872 19.8152C35.5084 20.189 35.2588 20.5222 34.9532 20.795L24.0194 30.8596ZM6.71813 4.69941C9.02907 4.76286 9.64708 7.41877 9.02614 8.42493C8.81606 8.89757 8.47766 9.29726 8.05192 9.57558C7.62617 9.8539 7.13134 9.99892 6.62733 9.99309C3.80969 9.99309 3.1126 5.91406 5.74865 4.85653C6.05824 4.73728 6.38801 4.68384 6.71813 4.69941ZM10.1684 10.2983C10.4818 9.97496 10.9036 10.6004 11.4132 11.1382C13.0681 10.0475 14.8489 10.3164 16.2255 11.7425C16.2548 11.7708 16.2781 11.805 16.294 11.8429C16.31 11.8808 16.3182 11.9218 16.3182 11.9631C16.3182 12.0045 16.31 12.0454 16.294 12.0833C16.2781 12.1213 16.2548 12.1554 16.2255 12.1837L14.2807 14.1869C13.8472 14.6371 13.2878 13.0901 12.5233 13.8848C12.0547 14.3682 12.4677 15.3955 13.6627 15.042C15.5255 14.5102 17.5084 13.1596 19.4825 15.1871C20.8503 16.5951 20.7595 18.3415 19.6846 19.9157C20.9967 21.2693 21.0055 20.8735 19.6846 22.2272C19.3917 22.5293 18.513 21.4567 18.3402 21.2814C16.5535 22.62 14.6468 22.5263 13.0564 20.8705C13.0271 20.8422 13.0038 20.8081 12.9878 20.7701C12.9719 20.7322 12.9637 20.6913 12.9637 20.6499C12.9637 20.6086 12.9719 20.5677 12.9878 20.5297C13.0038 20.4918 13.0271 20.4576 13.0564 20.4294L15.0012 18.4231C15.4317 17.9759 15.9707 19.5139 16.9548 18.7766C17.8745 18.0877 16.9548 17.1964 16.2548 17.3112C14.8196 17.5499 12.4266 19.6136 10.1801 17.2961C8.81819 15.8911 8.95878 13.9724 10.0483 12.4617C8.87676 11.2531 8.87676 11.6277 10.1684 10.2862V10.2983Z"
+                fill="var(--palette-secondary-main)"></path>
+              <defs>
+                <linearGradient id="paint_money_linear" x1="10" y1="3.27826e-07" x2="-0.999999" y2="29"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--palette-secondary-main)"></stop>
+                  <stop offset="1" stop-color="var(--palette-secondary-main)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h6>600 Coupons</h6>
+          <p>added everyday</p>
+        </div>
+
+        <div class="text-center col-6 col-lg-3 m-auto">
+          <div class="p-4">
+            <svg viewBox="0 0 36 36" font-size="2.25rem" width="1em" height="1em">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 0C20.4375 0 22.7607 0.486328 24.8848 1.36523L24.917 1.37988C27.1055 2.29102 29.0771 3.62402 30.7266 5.27637C32.3848 6.93164 33.7207 8.91504 34.6348 11.1211C35.5166 13.2422 36 15.5684 36 18.0029C36 20.4404 35.5137 22.7637 34.6348 24.8877L34.6201 24.9199C33.7061 27.1084 32.376 29.0801 30.7236 30.7295C29.0684 32.3877 27.085 33.7236 24.8789 34.6377C22.7578 35.5195 20.4316 36.0029 17.9971 36.0029C15.5625 36.0029 13.2363 35.5166 11.1123 34.6377L11.0801 34.623C8.8916 33.7119 6.91992 32.3789 5.27051 30.7295L5.27344 30.7236C3.61523 29.0654 2.2793 27.085 1.36523 24.8848C0.486328 22.7607 0 20.4375 0 18C0 15.5625 0.486328 13.2393 1.36523 11.1152L1.37988 11.083C2.29102 8.89453 3.62402 6.92285 5.27344 5.27344H5.27637C6.93457 3.61523 8.91504 2.2793 11.1182 1.36523C13.2393 0.486328 15.5625 0 18 0ZM4.97754 27.6768L5.04785 27.6357C6.77637 26.6719 11.2764 26.3525 13.1455 25.0488C13.2832 24.8438 13.4297 24.5449 13.5732 24.2197C13.7871 23.7305 13.9834 23.1943 14.1064 22.8311C13.585 22.2158 13.1367 21.5215 12.709 20.8389L11.2939 18.5859C10.7783 17.8125 10.5088 17.1094 10.4912 16.5293C10.4824 16.2568 10.5293 16.0107 10.6318 15.791C10.7373 15.5625 10.8984 15.3721 11.1182 15.2256C11.2207 15.1553 11.335 15.0967 11.4609 15.0527C11.3672 13.8311 11.335 12.293 11.3936 11.0039C11.4229 10.6992 11.4844 10.3916 11.5664 10.0869C11.9297 8.79492 12.835 7.75488 13.957 7.04004C14.5752 6.64453 15.2549 6.34863 15.9609 6.14941C16.4121 6.02051 15.5771 4.58496 16.043 4.53516C18.29 4.30371 21.9258 6.35742 23.4961 8.05371C24.2812 8.90332 24.7764 10.0313 24.8818 11.5225L24.7939 15.1963C25.1865 15.3164 25.4385 15.5654 25.5381 15.9668C25.6523 16.415 25.5293 17.042 25.1484 17.9004C25.1426 17.915 25.1338 17.9326 25.125 17.9473L23.5107 20.6045C22.9189 21.5801 22.3154 22.5615 21.5332 23.332C21.6064 23.4375 21.6797 23.54 21.75 23.6426C22.0693 24.1113 22.3916 24.5801 22.8047 24.999C22.8193 25.0137 22.8311 25.0283 22.8398 25.043C24.6973 26.3555 29.2178 26.6748 30.9521 27.6416L31.0225 27.6826C33.0352 24.9814 34.2246 21.6328 34.2246 18.0059C34.2246 13.5264 32.4082 9.46875 29.4727 6.53613C26.543 3.59766 22.4854 1.78125 18.0059 1.78125C13.5264 1.78125 9.46875 3.59766 6.53613 6.5332C3.59473 9.46289 1.77832 13.5205 1.77832 18C1.77832 21.627 2.96777 24.9756 4.97754 27.6768Z"
+                fill="var(--palette-secondary-main)"></path>
+              <defs>
+                <linearGradient id="paint_user_linear" x1="10" y1="3.27826e-07" x2="-0.999999" y2="29"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--palette-secondary-main)"></stop>
+                  <stop offset="1" stop-color="var(--palette-secondary-main)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h6>600 Coupons</h6>
+          <p>added everyday</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container m-auto mt-5 row">
+        <div class="col-12 col-lg-3 text-center">
+          <img class="m-auto" src="https://coupons.businessinsider.com/images/256x/Placeholder_Default_4.png" alt="" />
+        </div>
+        <div class="col-12 col-lg-9">
+          <h6 class="fw-bold mt-4 fs-5 text-start">
+            Get New Deals, Delivered to You
+          </h6>
+          <p class="text-start mb-4">
+            Sign up to receive tons of free coupons and promo codes.
+          </p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+              aria-describedby="basic-addon2" />
+            <span class="input-group-text bg-dark text-white" id="basic-addon2">Subscribe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="accordion container" id="accordionExample">
+        <div class="accordion-item mt-5 bg-light border-0">
+          <h6 class="accordion-header" id="headingOne">
+            <button class="accordion-button pb-2 shadow-0 outline-0 bg-transparent border-0 fs-4 fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              In-Demand Brands with Awesome Ways to Save
+            </button>
+            <p class="fw-bold fs-6 ms-4">
+              Slash prices with curated coupons and working promo codes on
+              popular brands you know and love.
+            </p>
+          </h6>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdsadsa</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">asdasdsaasdsad</a>
+              </div>
+              <div class="border m-2 mt-2 py-2 d-inline-block px-4 text-decoration-none">
+                <a class="link2" href="#1">Lorem</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mt-5 col-12 col-md-10 col-lg-6 px-5 mx-auto text-start">
+      <h6 class="mx-xl-5 fs-5 px-xl-5">
+        Shop More, Spend Less with Business Insider Coupons
+      </h6>
+      <p class="mx-xl-5 fw-semibold fs-6 px-xl-5">
+        Amazing deals at your fingertips
+      </p>
+      <p class="mx-xl-5 fs-6 px-xl-5">
+        Nothing feels better than getting exactly what you want for a
+        fantastic price. And here at Business Insider Coupons, we aim to help
+        you do just that. We're real people who love shopping online and
+        saving money, just like you. Our goal is to find the best coupons and
+        deals and share them with you.
+      </p>
+    </div>
+    <div class="container">
+      <div
+        class="col-12 row col-lg-6 m-auto border mt-5 d-flex bg-white pb-2 pt-3 justify-content-center align-items-center">
+        <div class="px-3 col-12 col-lg-8 text-center">
+          <h6 class="fs-5 fw-bold">Let us know how great we’re doing!</h6>
+          <p>How was your experience on Business Insider Coupons?</p>
+        </div>
+        <div class="d-flex col-12 col-lg-4 justify-content-center">
+          <div class="mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-star"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+            </svg>
+          </div>
+          <div class="mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-star"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+            </svg>
+          </div>
+          <div class="mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-star"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+            </svg>
+          </div>
+          <div class="mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-star"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+            </svg>
+          </div>
+          <div class="mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-star"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-light mt-5">
+      <hr />
+      <ul class="list-unstyled text-center text-md-start d-block mb-o d-md-flex flex-row">
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+        <li class="mx-4"><a class="link-hr text-dark" href="#!">Lorem</a></li>
+      </ul>
+      <hr class="mb-0" />
+    </div>
+  </main>
+  <footer class="bg-white p-4">
+    <section>
+      <div class="container row mx-auto">
+        <div class="col-12 text-center text-lg-start col-md">
+          <a href="#!">
+            <svg class="" viewBox="0 0 930 320" xmlns="http://www.w3.org/2000/svg" height="40" width="140">
+              <g class="" fill="#111" fill-rule="evenodd">
+                <path
+                  d="M.4 3.1h62.7c34.9 0 53.1 18 53.1 40.2 0 15.3-8.6 25.7-20.6 31.1v.4c15.3 5.5 23.9 17.6 23.9 33.1 0 22.1-17 41.5-53.9 41.5H.4V3.1zm60.7 58c10.4 0 15.1-5.3 15.1-11.2s-4.7-11.4-15.1-11.4H42.7V61h18.4zm.6 52.9c11 0 16.3-5.3 16.3-12.1s-5.5-12.1-16.1-12.1H42.7V114h19zm66.8-24.1V3.1h42.7v86.4c0 16.3 8 24.9 21.7 24.9s22.3-8.6 22.3-25.1V3.1h42.9v86.8c0 36.8-24.7 63.3-65.2 63.3s-64.4-26.5-64.4-63.3zm238.4-79.7v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5C294.8 85.2 270 75 270 46.6 269.9 21 290.1 0 326.1 0c15.9 0 30.2 4.1 40.8 10.2zM387 3.1h42.7v146.3H387V3.1zm194.5 146.4h-40.7L488.1 71h-.2v78.5h-40.5V3.1h40.7l52.7 77.2h.2V3.1h40.5v146.4zM599.2 3.1h101.1v38h-58.4v17.6h52.5v34.5h-52.5v18.2h58.4v38H599.2V3.1zm208.2 7.1v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C710.4 21 730.6 0 766.6 0c15.9 0 30.2 4.1 40.8 10.2zm113 0v37.6c-9.2-6.5-24.9-11-37.6-11-11.6 0-17.4 3.7-17.4 8.6s6.5 7.4 18 11.6c19.6 6.9 46.2 16.1 46.2 47.2 0 27.8-21 48.4-57.8 48.4-19 0-36.4-5.5-47.2-12.7v-39.6c10.6 8.6 26.6 15.5 42.1 15.5 13.1 0 19.2-4.9 19.2-10.4 0-7.1-10-10.2-21.9-14.5-15.7-5.7-40.5-15.9-40.5-44.3C823.4 21 843.6 0 879.6 0c15.9 0 30.2 4.1 40.8 10.2zM94.1 316.9h42.7V170.6H94.1v146.3zm194.5-146.3H248v77.2h-.2l-52.7-77.2h-40.7v146.3H195v-78.5h.2l52.7 78.5h40.7V170.6zm68.8-3.2c-36 0-56.2 21-56.2 46.6 0 28.4 24.9 38.6 40.5 44.3 12 4.3 21.9 7.4 21.9 14.5 0 5.5-6.1 10.4-19.2 10.4-15.5 0-31.5-6.9-42.1-15.5v39.6c10.8 7.2 28.2 12.7 47.2 12.7 36.8 0 57.8-20.6 57.8-48.4 0-31.1-26.6-40.4-46.2-47.2-11.6-4.1-18-6.5-18-11.6s5.9-8.6 17.4-8.6c12.7 0 28.4 4.5 37.6 11v-37.6c-10.6-6.1-24.9-10.2-40.7-10.2zm59.9 149.5H460V170.6h-42.7v146.3zm103-38.6h8.2c22.1 0 36.4-12.5 36.4-34.5s-14.3-34.7-36.4-34.7h-8.2v69.2zm87.8-34.5c0 44.1-33.3 73.1-81.1 73.1h-49.4V170.6H527c47.8 0 81.1 29.2 81.1 73.2zm11.5 73.1h101.1v-38h-58.4v-18.2h52.5v-34.5h-52.5v-17.6h58.4v-38H619.6v146.3zm168.3-77.2c10.8 0 19.2-5.1 19.2-15.3s-8.4-15.3-19.4-15.3h-9v30.6h9.2zm69.9 77.2h-50.3l-27.8-45.2h-1v45.2H736V170.6h52.1c36.6 0 62.1 16.3 62.1 50.9 0 13.7-6.1 33.7-30.4 43.9l38 51.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="col-12 text-center mt-lg-0 mt-4 col-md-12 col-lg">
+          <a class="text-decoration-none" href="#!">
+            <i class="bi bi-facebook fs-3 text-dark mx-4"></i>
+          </a>
+          <a class="text-decoration-none" href="#!">
+            <i class="bi bi-twitter fs-3 text-dark mx-4"></i>
+          </a>
+          <a class="text-decoration-none" href="#!"><i class="bi bi-linkedin fs-3 text-dark mx-4"></i></a>
+          <a class="text-decoration-none" href="#!"><i class="bi bi-youtube fs-3 text-dark mx-4"></i></a>
+          <a class="text-decoration-none" href="#!"><i class="bi bi-instagram fs-3 text-dark mx-4"></i></a>
+        </div>
+        <div class="col"></div>
+        <hr class="mt-4" />
+      </div>
+    </section>
+    <section>
+      <p class="small text-center mb-0">
+        * Copyright © 2024 Insider Inc. All rights reserved. Registration on
+        or use of this site constitutes acceptance of our Terms of Service and
+        Privacy Policy.
+      </p>
+      <div class="container bg-light bg-white mt-2">
+        <div
+          class="list-unstyled text-center d-block d-lg-flex bg-white justify-content-center align-content-center flex-row">
+          <a class="me-4 ps-4 small link-hr text-dark" href="#!">Lorem </a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+          <a class="me-4 mt-2 text-center mt-lg-0 border-start ps-4 small link-hr text-dark" href="#!">Lorem</a>
+        </div>
+      </div>
+      <div class="container bg-light bg-white mt-2">
+        <ul class="list-unstyled text-center text-md-start d-block d-md-flex bg-white justify-content-center flex-row">
+          <li class="me-4 -start ps-4">
+            <a class="small link-hr text-dark" href="#!">International Editions:
+            </a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">INTL</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">AT</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">DE</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">ES</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">IN</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">JP </a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">MX</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">NL</a>
+          </li>
+          <li class="me-4 border-start new-bd ps-4">
+            <a class="small link-hr text-dark" href="#!">PL</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="text-center mt-5">
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+      </div>
+      <div class="text-center">
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+        <img width="5%" class="img-ft"
+          src="https://www.businessinsider.com/public/assets/INSIDER/US/logos/insider-inc.svg" alt="" />
+      </div>
+    </section>
+
+    <span class="" href="" id="btn-back-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+        class="bi bi-arrow-up-circle-fill bg-csts border rounded-circle" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+      </svg>
+    </span>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <script>
+    var splideOne = new Splide("#slider1", {
+      type: "loop",
+      perPage: 3,
+      rewind: true,
+      rewindByDrag: true,
+      perMove: 1,
+      arrows: 1,
+      breakpoints: {
+        991: {
+          perPage: 2,
+          arrows: 1,
+        },
+        768: {
+          perPage: 1,
+          arrows: 0,
+        },
+      },
+    });
+    splideOne.mount();
+
+    var splideTwo = new Splide("#slider2", {
+      type: "loop",
+      autoplay: true,
+      wheel: true,
+      perPage: 6,
+      fixedHeight: "155px",
+      perMove: 1,
+      arrows: 1,
+      pagination: true,
+      rewind: true,
+      rewindByDrag: true,
+      breakpoints: {
+        592: {
+          perPage: 1,
+          arrows: 0,
+        },
+        768: {
+          arrows: 0,
+          perPage: 3,
+        },
+        992: {
+          perPage: 4,
+          arrows: 1,
+        },
+        1200: {
+          perPage: 4,
+          arrows: 1,
+        },
+      },
+    });
+    splideTwo.mount();
+
+    var splideThe = new Splide("#slide-cat", {
+      type: "loop",
+      perPage: 3,
+      rewind: true,
+      gap: 4,
+      breakpoints: {
+        592: {
+          perPage: 1,
+          arrows: 0,
+        },
+        768: {
+          arrows: 0,
+          perPage: 1,
+        },
+        992: {
+          perPage: 2,
+          arrows: 1,
+        },
+        1200: {
+          perPage: 2,
+          arrows: 1,
+        },
+      },
+    });
+    splideThe.mount();
+
+    var splideThe2 = new Splide("#slide-cat2", {
+      type: "loop",
+      perPage: 3,
+      rewind: true,
+      gap: 4,
+      breakpoints: {
+        592: {
+          perPage: 1,
+          arrows: 0,
+        },
+        768: {
+          arrows: 0,
+          perPage: 1,
+        },
+        992: {
+          perPage: 2,
+          arrows: 1,
+        },
+        1200: {
+          perPage: 2,
+          arrows: 1,
+        },
+      },
+    });
+    splideThe2.mount();
+
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    //mybutton.addEventListener(
+    //  "click",topto()
+    //);
+    mybutton.addEventListener("click", () => {
+      (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
+    });
+    //function topto(){
+    //  document.body.scrollTop = 0,
+    //  document.documentElement.scrollTop = 0
+    //}
+
+    // When the user clicks on the button, scroll to the top of the document
+  </script>
+</body>
+
+</html>
